@@ -1,0 +1,40 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "formply_trimline",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b292cb33134a578922ec4c8309acc7a09a8aeca942448f6bdb48ae56c33199e0",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "ryanhuynh",
+      "timestamp": "2022-10-13T22:03:27Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "x",
+        "sqlType": 2
+      }
+    ]
+  }
+}
