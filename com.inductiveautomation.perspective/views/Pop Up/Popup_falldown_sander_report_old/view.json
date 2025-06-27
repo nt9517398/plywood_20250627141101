@@ -1,0 +1,61 @@
+{
+  "custom": {},
+  "params": {
+    "EndDate": 1686664799000,
+    "StartDate": 1686526706742
+  },
+  "propConfig": {
+    "params.EndDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.StartDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "ReportViewer"
+        },
+        "position": {
+          "basis": "800px"
+        },
+        "propConfig": {
+          "props.params.EndDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.EndDate})"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.StartDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.StartDate})"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "page": 1,
+          "pageCount": 1,
+          "source": "falldown_sander"
+        },
+        "type": "ia.reporting.report-viewer"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

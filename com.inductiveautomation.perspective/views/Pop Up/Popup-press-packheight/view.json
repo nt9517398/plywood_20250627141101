@@ -1,0 +1,262 @@
+{
+  "custom": {},
+  "params": {},
+  "propConfig": {
+    "params.Auto": {
+      "access": "PUBLIC"
+    },
+    "params.name\u0026description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "direct",
+          "tagPath": "[default]Concentrator_HMI/LCC_PCV05A_CV.Name"
+        },
+        "type": "tag"
+      }
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 117,
+      "width": 502
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label_1"
+            },
+            "position": {
+              "height": 32,
+              "width": 144,
+              "x": 10,
+              "y": 38
+            },
+            "props": {
+              "text": "RECIPE INDEX:",
+              "textStyle": {
+                "fontFamily": "Noto Sans",
+                "fontWeight": "bold",
+                "textTransform": "capitalize",
+                "whiteSpace": "pre-line"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "recipe_index_input",
+              "tooltip": {
+                "enabled": true,
+                "text": "Please hit enter to load"
+              }
+            },
+            "position": {
+              "height": 32,
+              "width": 46,
+              "x": 126.5,
+              "y": 38
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {},
+                    "tagPath": "[default]site_press/HMI_RecipeActual/RecipeIndex"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_2"
+            },
+            "position": {
+              "height": 32,
+              "width": 27,
+              "x": 197,
+              "y": 38
+            },
+            "props": {
+              "text": ":",
+              "textStyle": {
+                "fontFamily": "Noto Sans",
+                "fontWeight": "bold",
+                "textTransform": "capitalize",
+                "whiteSpace": "pre-line"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_3"
+            },
+            "position": {
+              "height": 32,
+              "width": 148,
+              "x": 233,
+              "y": 38
+            },
+            "props": {
+              "text": "PACK HEIGHT:",
+              "textStyle": {
+                "fontFamily": "Noto Sans",
+                "fontWeight": "bold",
+                "textTransform": "capitalize",
+                "whiteSpace": "pre-line"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.getSibling(\"packheight_number\").props.text \u003d self.getSibling(\"packheight_number\").props.text + 1"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button"
+            },
+            "position": {
+              "height": 24,
+              "width": 58,
+              "x": 418,
+              "y": 14
+            },
+            "props": {
+              "image": {
+                "icon": {
+                  "path": "material/arrow_upward"
+                }
+              },
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.getSibling(\"packheight_number\").props.text \u003d self.getSibling(\"packheight_number\").props.text - 1"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "height": 24,
+              "width": 58,
+              "x": 418,
+              "y": 70
+            },
+            "props": {
+              "image": {
+                "icon": {
+                  "path": "material/arrow_downward"
+                }
+              },
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "packheight_number"
+            },
+            "position": {
+              "height": 32,
+              "width": 48,
+              "x": 351,
+              "y": 37
+            },
+            "propConfig": {
+              "custom.parameter": {
+                "binding": {
+                  "config": {
+                    "path": "../recipe_index_input.props.text"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "{value}-1",
+                      "type": "expression"
+                    },
+                    {
+                      "formatType": "numeric",
+                      "formatValue": "number",
+                      "type": "format"
+                    }
+                  ],
+                  "type": "property"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "bidirectional": true,
+                    "fallbackDelay": 2.5,
+                    "mode": "indirect",
+                    "references": {
+                      "x": "{this.custom.parameter}"
+                    },
+                    "tagPath": "[default]site_press/HMI_RecipeExtras/HMI_RecipeExtras_{x}_/RESERVE_DINT1"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "fontSize": 20
+              },
+              "textStyle": {
+                "fontFamily": "Noto Sans",
+                "fontWeight": "bold",
+                "textTransform": "capitalize",
+                "whiteSpace": "pre-line"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "1"
+        },
+        "position": {
+          "height": 108,
+          "width": 495
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

@@ -1,0 +1,1456 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 825,
+      "width": 1683
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 140,
+          "rotate": {
+            "anchor": "50% 63%",
+            "angle": "180deg"
+          },
+          "width": 426,
+          "x": 93.1223545023696,
+          "y": 567.64
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#00CCFF57"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank"
+        },
+        "position": {
+          "height": 400.86,
+          "width": 335.0000000000001,
+          "x": 606.535,
+          "y": 146.6087
+        },
+        "props": {
+          "liquidOpacity": 0.5,
+          "tankColor": "#FFFFFF",
+          "valueDisplay": {
+            "enabled": false
+          }
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 217.00000000000006,
+          "width": 312.44999999999993,
+          "x": 616.032,
+          "y": 238.97050000000002
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#00CCFF57"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Sparkline"
+        },
+        "position": {
+          "height": 351.72,
+          "width": 315.81999999999994,
+          "x": 619.105,
+          "y": 181.5987
+        },
+        "propConfig": {
+          "props.points": {
+            "binding": {
+              "config": {
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "mostRecent": "2",
+                  "mostRecentUnits": "HOUR"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "polling": {
+                  "enabled": true,
+                  "rate": "60"
+                },
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "type": "RAW"
+                },
+                "tags": [
+                  {
+                    "path": "[default]PhController/Mixing_Tank_Level"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "color": "#000000",
+          "marker": {
+            "last": {
+              "fill": {
+                "color": "#FF0000"
+              },
+              "shape": "triangle",
+              "size": 10,
+              "stroke": {
+                "color": "#FF0000"
+              }
+            }
+          },
+          "opacity": 2,
+          "range": {
+            "high": 100,
+            "low": 0
+          },
+          "width": 1
+        },
+        "type": "ia.display.sparkline"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 49.139999999999986,
+          "width": 272,
+          "x": 637.86125,
+          "y": 51.029375
+        },
+        "props": {
+          "style": {
+            "fontSize": 30
+          },
+          "text": "Mixing tank level"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Pump"
+        },
+        "position": {
+          "height": 131,
+          "width": 150,
+          "x": 213.856,
+          "y": 347.001625
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Pump_1_Running_FB"
+              },
+              "transforms": [
+                {
+                  "fallback": "running",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": false,
+                      "output": "stopped"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "appearance": "p\u0026id",
+          "label": {
+            "style": {
+              "fontSize": 20,
+              "transform": ""
+            },
+            "text": "Flume Primary Pump 1"
+          },
+          "style": {
+            "fill": "#D5D5D5",
+            "transform": ""
+          },
+          "value": {
+            "location": "hidden"
+          }
+        },
+        "type": "ia.symbol.pump"
+      },
+      {
+        "meta": {
+          "name": "Pump_0"
+        },
+        "position": {
+          "height": 131,
+          "width": 150,
+          "x": 359.319,
+          "y": 431.951
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Pump_2_Running_FB"
+              },
+              "transforms": [
+                {
+                  "fallback": "running",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": false,
+                      "output": "stopped"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "appearance": "p\u0026id",
+          "label": {
+            "style": {
+              "fontSize": 20,
+              "transform": ""
+            },
+            "text": "Flume Primary Pump 2"
+          },
+          "style": {
+            "fill": "#D5D5D5",
+            "transform": ""
+          },
+          "value": {
+            "location": "hidden"
+          }
+        },
+        "type": "ia.symbol.pump"
+      },
+      {
+        "meta": {
+          "name": "Straight arrow 4"
+        },
+        "position": {
+          "height": 240,
+          "width": 20,
+          "x": 77.2253,
+          "y": 562.96375
+        },
+        "props": {
+          "elements": [
+            {
+              "d": "M201,0 l199,387 -134,-55 0,664 -133,0 0,-664 -133,55 201,-387z",
+              "fill": {
+                "paint": "#c0c0c0"
+              },
+              "name": "path",
+              "stroke": {
+                "paint": "#4c4c4c",
+                "width": "2"
+              },
+              "style": {},
+              "type": "path"
+            }
+          ],
+          "preserveAspectRatio": "none",
+          "viewBox": "0 400 400 800"
+        },
+        "type": "ia.shapes.svg"
+      },
+      {
+        "meta": {
+          "name": "Straight arrow 6"
+        },
+        "position": {
+          "height": 240,
+          "width": 20,
+          "x": 512.627,
+          "y": 565.417
+        },
+        "props": {
+          "elements": [
+            {
+              "d": "M201,0 l199,387 -134,-55 0,664 -133,0 0,-664 -133,55 201,-387z",
+              "fill": {
+                "paint": "#c0c0c0"
+              },
+              "name": "path",
+              "stroke": {
+                "paint": "#4c4c4c",
+                "width": "2"
+              },
+              "style": {},
+              "type": "path"
+            }
+          ],
+          "preserveAspectRatio": "none",
+          "viewBox": "0 400 400 800"
+        },
+        "type": "ia.shapes.svg"
+      },
+      {
+        "meta": {
+          "name": "Generic arrow_1"
+        },
+        "position": {
+          "height": 30,
+          "width": 438,
+          "x": 83,
+          "y": 725.02
+        },
+        "props": {
+          "elements": [
+            {
+              "d": "M992,297 l-412,295 0,-125 156,-111 -736,0 0,-59 0,-60 736,0 -156,-112 0,-125 412,297z",
+              "fill": {
+                "paint": "#c0c0c0"
+              },
+              "name": "path",
+              "stroke": {
+                "paint": "#4c4c4c",
+                "width": "2"
+              },
+              "style": {},
+              "type": "path"
+            }
+          ],
+          "preserveAspectRatio": "none",
+          "viewBox": "0 0 200 592"
+        },
+        "type": "ia.shapes.svg"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 154,
+          "x": 16.00625,
+          "y": 502.49225
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "text": "From Boilers",
+          "textStyle": {
+            "fontSize": 25
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Pump_1"
+        },
+        "position": {
+          "height": 131,
+          "width": 150,
+          "x": 922.414625,
+          "y": 173.23174999999998
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Pump_3_Running_FB"
+              },
+              "transforms": [
+                {
+                  "fallback": "running",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": false,
+                      "output": "stopped"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "appearance": "p\u0026id",
+          "label": {
+            "style": {
+              "fontSize": 20,
+              "transform": ""
+            },
+            "text": "Discharge Pump 3"
+          },
+          "style": {
+            "fill": "#D5D5D5",
+            "transform": ""
+          },
+          "value": {
+            "location": "hidden"
+          }
+        },
+        "type": "ia.symbol.pump"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 32,
+          "width": 194,
+          "x": 1249.45,
+          "y": 173.65875
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#555555"
+          },
+          "text": "To North East Water",
+          "textStyle": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Pump_2"
+        },
+        "position": {
+          "height": 76,
+          "width": 130,
+          "x": 105.34,
+          "y": 259.8775
+        },
+        "propConfig": {
+          "props.state": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_composer2/Pump_AcidDosing_Run"
+              },
+              "transforms": [
+                {
+                  "fallback": "running",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": false,
+                      "output": "stopped"
+                    }
+                  ],
+                  "outputType": "scalar",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "appearance": "p\u0026id",
+          "label": {
+            "style": {
+              "fontSize": 20,
+              "transform": ""
+            },
+            "text": "Dosing Pump"
+          },
+          "style": {
+            "fill": "#D5D5D5",
+            "transform": ""
+          },
+          "value": {
+            "location": "hidden"
+          }
+        },
+        "type": "ia.symbol.pump"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 49.139999999999986,
+          "width": 62,
+          "x": 740.291,
+          "y": 96.71775000000002
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/mixing_tank_level"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \u0027%\u0027",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "color": "#00D9D9",
+            "fontSize": 30
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_6"
+        },
+        "position": {
+          "height": 49.139999999999986,
+          "width": 62,
+          "x": 258.13475000000005,
+          "y": 680.733425
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/Flume_Level"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \u0027%\u0027",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "color": "#00D9D9",
+            "fontSize": 30
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_7"
+        },
+        "position": {
+          "height": 32,
+          "width": 198,
+          "x": 1059.97,
+          "y": 266.19
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/Flow_Rate_EU"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \" L/MIN\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_8"
+        },
+        "position": {
+          "height": 32,
+          "width": 177,
+          "x": 320.095,
+          "y": 239.37775
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/AcidDosingFlow_mlph"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \" mL/H\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_9"
+        },
+        "position": {
+          "height": 32,
+          "width": 53,
+          "x": 162.354,
+          "y": 331.493
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/Citric_Acid_Dosing_PID_OUT"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \" %\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_10"
+        },
+        "position": {
+          "height": 32,
+          "width": 196.00000000000003,
+          "x": 170.303375,
+          "y": 99.613775
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/CitricAcidDosingConsumption_l"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "\" Consumed: \" + {value} + \" L\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_11"
+        },
+        "position": {
+          "height": 32,
+          "width": 197,
+          "x": 170.002375,
+          "y": 124.437375
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/EstimatedCitricAcidRemainingInIBC_l"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "\" Available: \" + {value} + \" L\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 15
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_12"
+        },
+        "position": {
+          "height": 32,
+          "width": 167,
+          "x": 9.709375,
+          "y": 531.153125
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/FT4820_0515"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "##.#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} + \" L/MIN\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "textStyle": {
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Finishing tank 2"
+        },
+        "position": {
+          "height": 93,
+          "width": 144,
+          "x": 25.43875,
+          "y": 99.62375
+        },
+        "props": {
+          "elements": [
+            {
+              "elements": [
+                {
+                  "d": "M0.676,0.677h111.036v59.091H0.676V0.677z",
+                  "fill": {
+                    "paint": "#CCCCCC"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4C4C4C",
+                    "width": "0.25"
+                  },
+                  "type": "path"
+                }
+              ],
+              "name": "Group_Finishing_Tank",
+              "type": "group"
+            },
+            {
+              "elements": [
+                {
+                  "d": "M3.491,59.799h105.405v4.505H3.491V59.799z",
+                  "fill": {
+                    "paint": "#404040"
+                  },
+                  "name": "path",
+                  "type": "path"
+                }
+              ],
+              "name": "Group_Finishing_Tank_Bottom",
+              "type": "group"
+            },
+            {
+              "elements": [
+                {
+                  "d": "M112.5,11.6v-1.126H0V11.6H112.5z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M111.712,49.888v-1.126H0.676v1.126H111.712z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M13.176,0.002h-1.126v64.977h1.126V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M26.014,0.002h-1.126v64.977h1.126V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M38.176,0.002h-0.451v64.977h0.451V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M51.464,0.002h-0.45v64.977h0.45V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M61.374,0.002h-0.45v64.977h0.45V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M74.212,0.002h-0.676v64.977h0.676V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M87.5,0.002h-1.126v64.977H87.5V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M100.338,0.002h-1.126v64.977h1.126V0.002z",
+                  "fill": {
+                    "paint": "#7F7F7F"
+                  },
+                  "name": "path",
+                  "type": "path"
+                }
+              ],
+              "name": "Group_Finishing_Tank_Seal",
+              "type": "group"
+            },
+            {
+              "elements": [
+                {
+                  "d": "M111.712,49.888v5.856H0.676v-5.856H111.712z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4C4C4C",
+                    "width": "0.25"
+                  },
+                  "type": "path"
+                },
+                {
+                  "d": "M112.5,6.871v3.604H0V6.871H112.5z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "stroke": {
+                    "paint": "#4C4C4C",
+                    "width": "0.25"
+                  },
+                  "type": "path"
+                },
+                {
+                  "d": "M100.338,0.002h2.14v64.977h-2.14l-9.91-9.459h2.928l6.982,6.307V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M12.049,0.002H9.91v64.977h2.14l9.91-9.459h-2.928l-6.982,6.307V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M22.635,0.002h2.478v64.977h-2.478V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M35.698,0.002h2.252v64.977h-2.252V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M48.536,0.002h2.478v64.977h-2.478V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M61.6,0.002h2.252v64.977H61.6V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M74.438,0.002h2.477v64.977h-2.477V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M87.5,0.002h2.252v64.977H87.5V0.002z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                }
+              ],
+              "name": "Group_Finishing_TankSeal",
+              "type": "group"
+            },
+            {
+              "elements": [
+                {
+                  "d": "M63.626,14.303h9.91v5.855h-9.91V14.303z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M63.626,20.835h9.91v-0.676h-9.91V20.835z",
+                  "fill": {
+                    "paint": "#999999"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M26.014,14.303h9.91v5.855h-9.91V14.303z",
+                  "fill": {
+                    "paint": "#E5E5E5"
+                  },
+                  "name": "path",
+                  "type": "path"
+                },
+                {
+                  "d": "M26.014,20.835h9.91v-0.676h-9.91V20.835z",
+                  "fill": {
+                    "paint": "#999999"
+                  },
+                  "name": "path",
+                  "type": "path"
+                }
+              ],
+              "name": "Group_Finishing_Tank_Labels",
+              "type": "group"
+            }
+          ],
+          "viewBox": "0 0 112.5 64.98"
+        },
+        "type": "ia.shapes.svg"
+      },
+      {
+        "meta": {
+          "name": "Label_13"
+        },
+        "position": {
+          "height": 32,
+          "width": 126.00000000000001,
+          "x": 34.04875,
+          "y": 66.53125
+        },
+        "props": {
+          "text": "CITRIC ACID IBC"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_14"
+        },
+        "position": {
+          "height": 49.139999999999986,
+          "width": 326,
+          "x": 636.14,
+          "y": 562.9
+        },
+        "props": {
+          "style": {
+            "fontSize": 30
+          },
+          "text": "Mixing tank pH Actual"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_15"
+        },
+        "position": {
+          "height": 49.139999999999986,
+          "width": 62,
+          "x": 743.35325,
+          "y": 603.7680244140626
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]PhController/mixing_tank_ph_pv"
+              },
+              "transforms": [
+                {
+                  "formatType": "numeric",
+                  "formatValue": "#",
+                  "type": "format"
+                },
+                {
+                  "expression": "{value} ",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "color": "#00D9D9",
+            "fontSize": 30
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "position": {
+      "x": 7.265625,
+      "y": -11.0625
+    },
+    "props": {
+      "pipes": [
+        {
+          "appearance": "auto",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "solid",
+          "name": "pipe",
+          "origin": {
+            "connections": [],
+            "x": 0,
+            "y": 0
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_1",
+          "origin": {
+            "connections": [
+              {
+                "x": 613.73,
+                "y": 447.58
+              }
+            ],
+            "x": 475.94,
+            "y": 447.58
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_4",
+          "origin": {
+            "connections": [
+              {
+                "x": 613.81,
+                "y": 365.53
+              }
+            ],
+            "x": 321.97,
+            "y": 365.53
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "solid",
+          "name": "pipe_5",
+          "origin": {
+            "connections": [
+              {
+                "x": 955.51,
+                "y": 203.96
+              }
+            ],
+            "x": 927.65,
+            "y": 203.96
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_7",
+          "origin": {
+            "connections": [
+              {
+                "x": 1249.44,
+                "y": 191.47
+              }
+            ],
+            "x": 1036.7,
+            "y": 191.47
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_10",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "connections": [
+                      {
+                        "connections": [
+                          {
+                            "x": 172.11,
+                            "y": 281.28
+                          }
+                        ],
+                        "x": 127.59,
+                        "y": 281.28
+                      }
+                    ],
+                    "x": 98.16,
+                    "y": 281.28
+                  }
+                ],
+                "x": 98.16,
+                "y": 250.07
+              }
+            ],
+            "x": 98.16,
+            "y": 187.95
+          },
+          "start": "arrowInward",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_9",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "x": 184.88,
+                    "y": 595.68
+                  }
+                ],
+                "x": 184.88,
+                "y": 518.12
+              }
+            ],
+            "x": 142.85,
+            "y": 518.12
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "arrowOutward",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_2",
+          "origin": {
+            "connections": [
+              {
+                "x": 613.56,
+                "y": 272.19
+              }
+            ],
+            "x": 174.38,
+            "y": 272.19
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_0",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "x": 393.36,
+                    "y": 463.36
+                  }
+                ],
+                "x": 342.26,
+                "y": 463.36
+              }
+            ],
+            "x": 342.26,
+            "y": 600.18
+          },
+          "start": "arrowInward",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "p\u0026id",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "midArrow",
+          "name": "pipe_3",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "x": 260.86,
+                    "y": 381.3
+                  }
+                ],
+                "x": 214,
+                "y": 381.3
+              }
+            ],
+            "x": 214,
+            "y": 600.66
+          },
+          "start": "arrowInward",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        },
+        {
+          "appearance": "auto",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "solid",
+          "name": "pipe_6",
+          "origin": {
+            "x": 1698,
+            "y": 552
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 5
+        }
+      ],
+      "style": {
+        "backgroundColor": ""
+      }
+    },
+    "type": "ia.container.coord"
+  }
+}

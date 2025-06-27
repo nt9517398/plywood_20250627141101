@@ -1,0 +1,188 @@
+{
+  "custom": {
+    "target_days": null,
+    "target_volume_total": null
+  },
+  "params": {
+    "tagPath": "value"
+  },
+  "propConfig": {
+    "custom.target_days": {
+      "binding": {
+        "config": {
+          "bidirectional": true,
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]{tagPath}/target/target_days"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "custom.target_volume_total": {
+      "binding": {
+        "config": {
+          "bidirectional": true,
+          "fallbackDelay": 2.5,
+          "mode": "indirect",
+          "references": {
+            "tagPath": "{view.params.tagPath}"
+          },
+          "tagPath": "[default]{tagPath}/target/target_volume_total"
+        },
+        "type": "tag"
+      },
+      "persistent": true
+    },
+    "params.Auto": {
+      "access": "PUBLIC"
+    },
+    "params.name\u0026description": {
+      "binding": {
+        "config": {
+          "fallbackDelay": 2.5,
+          "mode": "direct",
+          "tagPath": "[default]Concentrator_HMI/LCC_PCV05A_CV.Name"
+        },
+        "type": "tag"
+      }
+    },
+    "params.tagPath": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 201,
+      "width": 500
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 242,
+          "x": 6.5
+        },
+        "props": {
+          "text": "SET PRODUCTION TARGET:",
+          "textStyle": {
+            "fontFamily": "Noto Sans",
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+            "whiteSpace": "pre-line"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TextField"
+        },
+        "position": {
+          "height": 48,
+          "width": 220,
+          "x": 260.75,
+          "y": 114
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.custom.target_volume_total"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "placeholder": "Please Input The Target M³...",
+          "style": {
+            "fontSize": 25,
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "TextField_0"
+        },
+        "position": {
+          "height": 48,
+          "width": 220,
+          "x": 260.75,
+          "y": 57
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.custom.target_days"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "placeholder": "Please Input The Target M³...",
+          "style": {
+            "fontSize": 25,
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.input.text-field"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 44,
+          "width": 173,
+          "x": 22.25,
+          "y": 114
+        },
+        "props": {
+          "style": {
+            "fontSize": 25
+          },
+          "text": "TARGET IN M³:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 44,
+          "width": 240,
+          "x": 19.25,
+          "y": 57
+        },
+        "props": {
+          "text": "PRODUCTION DAYS:",
+          "textStyle": {
+            "fontSize": 25
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

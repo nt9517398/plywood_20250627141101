@@ -1,0 +1,456 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 609,
+      "width": 1270
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "if (dateExtract(now(0),\"hour\")\u003e0,if (dateExtract(now(0),\"hour\")\u003c 4,settime((dateArithmetic(now(0), -1, \"days\")),04,00,00),settime(now(0),04,00,00)),0)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "May 9, 2024 4:00 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "NOW(60)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "May 9, 2024 2:16 PM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "27px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "-50px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 30,
+                    "textAlign": "center"
+                  },
+                  "text": "SETPOINTS HISTORY",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "component": {
+                    "onEditCellCommit": {
+                      "config": {
+                        "script": "self.props.data \u003d system.dataset.setValue(self.props.data, event.row , event.column,valueToSet)\nupdate \u003d \"UPDATE site_press SET pack_count \u003d ? WHERE t_stamp \u003d ? and recipe_name\u003d?\"\nsystem.db.runPrepUpdate(update, args)"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Table"
+                },
+                "position": {
+                  "basis": "542.8px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.data": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_2/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_2/DateTo.props.value}"
+                        },
+                        "queryPath": "site_lathe/site_lathe_setpoints",
+                        "returnFormat": "dataset"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "columns": [
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                      "editable": false,
+                      "field": "t_stamp",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "center",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY HH:mm:ss",
+                      "editable": false,
+                      "field": "HMI_Lathe_Roundup_Speed",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "auto",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY",
+                      "editable": false,
+                      "field": "Peeling_Speed_Setpoint",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "auto",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    }
+                  ],
+                  "dragOrderable": false,
+                  "enableHeader": false,
+                  "enableHeaderGroups": true,
+                  "headerGroupStyle": {
+                    "backgroundColor": "#004B3A"
+                  },
+                  "headerGroups": [
+                    [
+                      {
+                        "align": "center",
+                        "justify": "center",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "TIME STAMP\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "ROUNDUP SPEED SETPOINT\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "PEELING SPEED SETPOINT\n"
+                      }
+                    ]
+                  ],
+                  "rows": {
+                    "highlight": {
+                      "color": "#00AC3A"
+                    },
+                    "striped": {
+                      "color": {
+                        "even": "#2B2B2B",
+                        "odd": "#004B3A71"
+                      }
+                    }
+                  },
+                  "selection": {
+                    "enableRowSelection": false,
+                    "style": {
+                      "backgroundColor": "00683A"
+                    }
+                  }
+                },
+                "type": "ia.display.table"
+              }
+            ],
+            "meta": {
+              "name": "downtime"
+            },
+            "position": {
+              "basis": "986px",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "borderStyle": "outset",
+                "borderWidth": 0.1
+              }
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "552.1px",
+          "grow": 1
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "borderStyle": "double",
+        "borderWidth": 7,
+        "outlineStyle": "none"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

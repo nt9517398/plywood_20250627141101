@@ -1,0 +1,116 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 47,
+      "width": 1300
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label_0",
+              "visible": false
+            },
+            "position": {
+              "height": 0.4156,
+              "width": 0.1946,
+              "x": 0.5223,
+              "y": 0.2984
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "dateFormat(now(0), \"M/d/yy, 05:00:00 a\")"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "toLong({value})",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "expr"
+                }
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 0.4571,
+              "width": 0.1569,
+              "x": 0.8431,
+              "y": 0.5429
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "dateFormat(now(1000), \"MMM d, yyyy hh:mm:ss a\")"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Image_2"
+            },
+            "position": {
+              "height": 0.987,
+              "rotate": {
+                "anchor": "21% 50%"
+              },
+              "width": 0.1492,
+              "x": 0.0187,
+              "y": 0.0056
+            },
+            "props": {
+              "fit": {
+                "mode": "cover"
+              },
+              "source": "/system/images/RYAN/carter-holt-harvey-logo-png-transparent.png",
+              "style": {
+                "color": "#D10000"
+              },
+              "tint": {
+                "color": "#004B3A"
+              }
+            },
+            "type": "ia.display.image"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "1300px",
+          "grow": 1
+        },
+        "props": {
+          "mode": "percent"
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "backgroundColor": "#004B3A"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

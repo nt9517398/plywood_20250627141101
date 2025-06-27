@@ -1,0 +1,67 @@
+{
+  "custom": {},
+  "params": {
+    "EndDate": 1686526706742,
+    "StartDate": 1686526706742
+  },
+  "propConfig": {
+    "params.EndDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.StartDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 500
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "ReportViewer"
+        },
+        "position": {
+          "basis": "700px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.params.EndDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.EndDate})"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.StartDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.StartDate})"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "downloadFilename": "Black Liquor",
+          "page": 1,
+          "pageCount": 2,
+          "source": "Concentrator/concentrator_BL_dump_history_report"
+        },
+        "type": "ia.reporting.report-viewer"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

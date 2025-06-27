@@ -1,0 +1,800 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1161,
+      "width": 733
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Image_0"
+            },
+            "position": {
+              "height": 0.2834,
+              "rotate": {
+                "anchor": "21% 50%"
+              },
+              "width": 2.4311,
+              "x": -1.4384,
+              "y": 0.6964
+            },
+            "props": {
+              "fit": {
+                "mode": "cover"
+              },
+              "source": "/system/images/RYAN/CGS_9873-Web.jpg"
+            },
+            "type": "ia.display.image"
+          },
+          {
+            "meta": {
+              "name": "MenuTree"
+            },
+            "position": {
+              "height": 0.7278,
+              "width": 0.9932
+            },
+            "props": {
+              "backActionStyle": {
+                "backgroundImage": ""
+              },
+              "items": [
+                {
+                  "enabled": true,
+                  "label": {
+                    "icon": {
+                      "path": "material/map"
+                    },
+                    "text": "MAP"
+                  },
+                  "navIcon": {
+                    "color": "",
+                    "path": "material/chevron_right"
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/mapview",
+                  "visible": true
+                },
+                {
+                  "enabled": true,
+                  "label": {
+                    "icon": {
+                      "path": "material/perm_device_information"
+                    },
+                    "text": "MILL OVERVIEW"
+                  },
+                  "navIcon": {
+                    "color": "",
+                    "path": "material/chevron_right"
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "/milloverview",
+                  "visible": true
+                },
+                {
+                  "enabled": true,
+                  "items": [
+                    {
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "TRADE WASTE PH"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/tradewasteph",
+                      "visible": true
+                    },
+                    {
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "DEBARKER"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/debarker",
+                      "visible": true
+                    },
+                    {
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "COMPOSER 2"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/composer2",
+                      "visible": true
+                    },
+                    {
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "FORM-PLY PRESS"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/formply_press",
+                      "visible": true
+                    },
+                    {
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "FORM-PLY TRIMM LINE"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/formply_trimline",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "LATHE"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/site_lathe",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "DRYER"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/site_dryer",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "LAY UP LINE"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/lul",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "PLY2 PRESS"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/ply2_press",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "FALLDOWN SANDER"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/site_falldown_sander",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "CONCENTRATOR"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/black_liquor_dump",
+                      "visible": true
+                    }
+                  ],
+                  "label": {
+                    "icon": {
+                      "path": "material/attach_money"
+                    },
+                    "text": "LINES"
+                  },
+                  "navIcon": {
+                    "color": "",
+                    "path": "material/chevron_right"
+                  },
+                  "resetOnClick": false,
+                  "showHeader": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "",
+                  "visible": true
+                },
+                {
+                  "enabled": true,
+                  "items": [
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "BOILER COMMON"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/boiler_common",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "LUL GLUE"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/lul_glue_pressure",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "PLY2 PRESS"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": true,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "/press_pressure_charts",
+                      "visible": true
+                    }
+                  ],
+                  "label": {
+                    "icon": {
+                      "path": "material/settings"
+                    },
+                    "text": "MAINTENANCE"
+                  },
+                  "navIcon": {
+                    "color": "",
+                    "path": "material/chevron_right"
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "",
+                  "visible": true
+                },
+                {
+                  "enabled": true,
+                  "items": [
+                    {
+                      "enabled": true,
+                      "items": [
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "DEBARKER"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/debarker_productionreport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "COMPOSER 2"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/composer2_productionreport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "FORM-PLY PRESS"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/formply_press_productionreport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "FORM-PLY TRIMM LINE"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/formply_trimline_productionreport",
+                          "visible": true
+                        }
+                      ],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "PRODUCTION"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "",
+                      "visible": true
+                    },
+                    {
+                      "enabled": true,
+                      "items": [
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "DEBARKER"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/debarker_downtimereport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "COMPOSER 2"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/composer2_downtimereport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "FORM-PLY PRESS"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/formply_press_downtimereport",
+                          "visible": true
+                        },
+                        {
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "FORM-PLY TRIMM LINE"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/formply_trimline_downtimereport",
+                          "visible": true
+                        }
+                      ],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "DOWNTIME"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [
+                        {
+                          "backActionText": "",
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "SANDER"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": true,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/falldown_sander",
+                          "visible": true
+                        }
+                      ],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "FALLDOWN"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "",
+                      "visible": true
+                    },
+                    {
+                      "backActionText": "",
+                      "enabled": true,
+                      "items": [
+                        {
+                          "backActionText": "",
+                          "enabled": true,
+                          "items": [],
+                          "label": {
+                            "icon": {
+                              "path": ""
+                            },
+                            "text": "BLACK LIQUOR DUMP"
+                          },
+                          "navIcon": {
+                            "path": ""
+                          },
+                          "resetOnClick": false,
+                          "showHeader": false,
+                          "style": {
+                            "classes": ""
+                          },
+                          "target": "/concentrator_BL_dump_history_report",
+                          "visible": true
+                        }
+                      ],
+                      "label": {
+                        "icon": {
+                          "path": ""
+                        },
+                        "text": "CONCENTRATOR"
+                      },
+                      "navIcon": {
+                        "path": ""
+                      },
+                      "resetOnClick": false,
+                      "showHeader": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "target": "",
+                      "visible": true
+                    }
+                  ],
+                  "label": {
+                    "icon": {
+                      "path": "material/report"
+                    },
+                    "text": "REPORTS"
+                  },
+                  "navIcon": {
+                    "color": "",
+                    "path": "material/chevron_right"
+                  },
+                  "resetOnClick": false,
+                  "showHeader": true,
+                  "style": {
+                    "classes": ""
+                  },
+                  "target": "",
+                  "visible": true
+                }
+              ],
+              "style": {
+                "backgroundImage": ""
+              }
+            },
+            "type": "ia.navigation.menutree"
+          },
+          {
+            "events": {
+              "dom": {
+                "onDoubleClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "Tw-Xlf3R",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Navigation/silly",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 0.0233,
+              "width": 0.4939,
+              "x": 0.0114,
+              "y": 0.9765
+            },
+            "props": {
+              "style": {
+                "fontSize": 5
+              },
+              "text": "© 2021 - 2025 BRUCE"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "970px",
+          "grow": 1
+        },
+        "props": {
+          "mode": "percent"
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundImage": ""
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

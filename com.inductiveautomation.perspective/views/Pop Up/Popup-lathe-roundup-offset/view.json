@@ -1,0 +1,514 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 283,
+      "width": 531
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tfrom threading import Timer\n\tdef writeOn():\n\t\tsystem.tag.write(\"[default]site_lathe/roundup_offset/SupHMIRoundupOffsetAdd\", 1)\n\tdef delayOff():\n\t\tsystem.tag.write(\"[default]site_lathe/roundup_offset/SupHMIRoundupOffsetAdd\", 0)\n\n\twriteOn()\n\tt \u003d Timer(0.3, delayOff)\n\tt.start()\t"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "height": 46,
+          "width": 91,
+          "x": 102,
+          "y": 204
+        },
+        "propConfig": {
+          "custom.tag_value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_lathe/roundup_offset/SupHMIRoundupOffsetAdd"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/arrow_upward"
+            }
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 44,
+          "width": 183,
+          "x": 29,
+          "y": 20
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "text": "Peeling Thickness:"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "height": 32,
+          "width": 82,
+          "x": 225,
+          "y": 26
+        },
+        "propConfig": {
+          "custom.key": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+              },
+              "transforms": [
+                {
+                  "fallback": "#FFFFFF",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 240,
+                      "output": "#00FF00"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.style.color": {
+            "binding": {
+              "config": {
+                "path": "this.custom.key"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "text": "2.4 mm"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_1"
+        },
+        "position": {
+          "height": 32,
+          "width": 82,
+          "x": 328,
+          "y": 26
+        },
+        "propConfig": {
+          "custom.key": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+              },
+              "transforms": [
+                {
+                  "fallback": "#FFFFFF",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 300,
+                      "output": "#00FF00"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.style.color": {
+            "binding": {
+              "config": {
+                "path": "this.custom.key"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "text": "3.0 mm"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_2"
+        },
+        "position": {
+          "height": 32,
+          "width": 82,
+          "x": 427,
+          "y": 26
+        },
+        "propConfig": {
+          "custom.key": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+              },
+              "transforms": [
+                {
+                  "fallback": "#FFFFFF",
+                  "inputType": "scalar",
+                  "mappings": [
+                    {
+                      "input": 400,
+                      "output": "#00FF00"
+                    }
+                  ],
+                  "outputType": "color",
+                  "type": "map"
+                }
+              ],
+              "type": "tag"
+            }
+          },
+          "props.style.color": {
+            "binding": {
+              "config": {
+                "path": "this.custom.key"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "text": "4.0 mm"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_3"
+        },
+        "position": {
+          "height": 44,
+          "width": 94,
+          "x": 224,
+          "y": 84
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/roundup_offset/SupHMI_RoundupOffset/SupHMI_RoundupOffset_0_"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \" mm\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_4"
+        },
+        "position": {
+          "height": 44,
+          "width": 100,
+          "x": 323,
+          "y": 85
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/roundup_offset/SupHMI_RoundupOffset/SupHMI_RoundupOffset_1_"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \" mm\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_5"
+        },
+        "position": {
+          "height": 44,
+          "width": 101,
+          "x": 419,
+          "y": 85
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "tagPath": "[default]site_lathe/roundup_offset/SupHMI_RoundupOffset/SupHMI_RoundupOffset_2_"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \" mm\"",
+                  "type": "expression"
+                }
+              ],
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_6"
+        },
+        "position": {
+          "height": 44,
+          "width": 175,
+          "x": 30,
+          "y": 80
+        },
+        "props": {
+          "style": {
+            "fontSize": 20
+          },
+          "text": "Current roundup offset:",
+          "textStyle": {
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_7",
+          "tooltip": {
+            "enabled": true,
+            "text": "By increasing round up offset, more trash in front of ribbon"
+          }
+        },
+        "position": {
+          "height": 44,
+          "width": 215,
+          "x": 40,
+          "y": 160
+        },
+        "props": {
+          "style": {
+            "fontSize": 15
+          },
+          "text": "INCREASE ROUND UP OFFSET"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_8",
+          "tooltip": {
+            "enabled": true,
+            "text": "By decreasing round up offset, less trash in front of ribbon"
+          }
+        },
+        "position": {
+          "height": 44,
+          "width": 215,
+          "x": 290,
+          "y": 160
+        },
+        "props": {
+          "style": {
+            "fontSize": 15
+          },
+          "text": "DECREASE ROUND UP OFFSET"
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tfrom threading import Timer\n\tdef writeOn():\n\t\tsystem.tag.write(\"[default]site_lathe/roundup_offset/SupHMIRoundupOffsetSub\", 1)\n\tdef delayOff():\n\t\tsystem.tag.write(\"[default]site_lathe/roundup_offset/SupHMIRoundupOffsetSub\", 0)\n\n\twriteOn()\n\tt \u003d Timer(0.3, delayOff)\n\tt.start()\t"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button_0"
+        },
+        "position": {
+          "height": 46,
+          "width": 91,
+          "x": 347,
+          "y": 204
+        },
+        "propConfig": {
+          "custom.tag_value": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "fallbackDelay": 2.5,
+                "mode": "indirect",
+                "references": {},
+                "tagPath": "[default]site_lathe/roundup_offset/SupHMIRoundupOffsetAdd"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "image": {
+            "icon": {
+              "path": "material/arrow_downward"
+            }
+          },
+          "text": ""
+        },
+        "type": "ia.input.button"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "pipes": [
+        {
+          "appearance": "auto",
+          "end": "none",
+          "fill": "",
+          "flanges": true,
+          "lineVariant": "solid",
+          "name": "pipe",
+          "origin": {
+            "connections": [
+              {
+                "connections": [
+                  {
+                    "connections": [
+                      {
+                        "connections": [
+                          {
+                            "connections": [
+                              {
+                                "connections": [
+                                  {
+                                    "connections": [
+                                      {
+                                        "x": 18,
+                                        "y": 42
+                                      }
+                                    ],
+                                    "x": 18,
+                                    "y": 20
+                                  }
+                                ],
+                                "x": 509,
+                                "y": 20
+                              }
+                            ],
+                            "x": 509,
+                            "y": 108
+                          }
+                        ],
+                        "x": 509,
+                        "y": 136
+                      }
+                    ],
+                    "x": 18,
+                    "y": 136
+                  }
+                ],
+                "x": 18,
+                "y": 108
+              }
+            ],
+            "x": 18,
+            "y": 42
+          },
+          "start": "none",
+          "stroke": "",
+          "visible": true,
+          "width": 10
+        }
+      ]
+    },
+    "type": "ia.container.coord"
+  }
+}

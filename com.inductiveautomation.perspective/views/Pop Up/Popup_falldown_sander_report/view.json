@@ -1,0 +1,448 @@
+{
+  "custom": {},
+  "params": {
+    "EndDate": 1686664799000,
+    "StartDate": 1686526706742
+  },
+  "propConfig": {
+    "params.EndDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.StartDate": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "THICKNESS"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": 0
+                },
+                {
+                  "label": 7,
+                  "value": 7
+                },
+                {
+                  "label": 9,
+                  "value": 9
+                },
+                {
+                  "label": 12,
+                  "value": 12
+                },
+                {
+                  "label": 13,
+                  "value": 13
+                },
+                {
+                  "label": 15,
+                  "value": 15
+                },
+                {
+                  "label": 17,
+                  "value": 17
+                },
+                {
+                  "label": 19,
+                  "value": 19
+                },
+                {
+                  "label": 21,
+                  "value": 21
+                },
+                {
+                  "label": 25,
+                  "value": 25
+                },
+                {
+                  "label": 27,
+                  "value": 27
+                },
+                {
+                  "label": 28,
+                  "value": 28
+                },
+                {
+                  "label": 29,
+                  "value": 29
+                },
+                {
+                  "label": 30,
+                  "value": 30
+                },
+                {
+                  "label": 32,
+                  "value": 32
+                },
+                {
+                  "label": 33,
+                  "value": 33
+                },
+                {
+                  "label": 38,
+                  "value": 38
+                },
+                {
+                  "label": 39,
+                  "value": 39
+                },
+                {
+                  "label": 42,
+                  "value": 42
+                },
+                {
+                  "label": 50,
+                  "value": 50
+                }
+              ],
+              "value": 0
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "GRADE"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": "ALL"
+                },
+                {
+                  "label": "CD",
+                  "value": "CD"
+                },
+                {
+                  "label": "NS",
+                  "value": "NS"
+                },
+                {
+                  "label": "DD",
+                  "value": "DD"
+                },
+                {
+                  "label": "G2S",
+                  "value": "G2S"
+                }
+              ],
+              "value": "ALL"
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "PRODUCT"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": "ALL"
+                },
+                {
+                  "label": "EcoPly",
+                  "value": "EcoPly"
+                },
+                {
+                  "label": "PlyFloor",
+                  "value": "PlyFloor"
+                },
+                {
+                  "label": "Plybrace",
+                  "value": "PlyBrace"
+                },
+                {
+                  "label": "PlyRoof",
+                  "value": "PlyRoof"
+                },
+                {
+                  "label": "Non Struct",
+                  "value": "Non Struct"
+                },
+                {
+                  "label": "CCFO",
+                  "value": "CCFO"
+                },
+                {
+                  "label": "Trial",
+                  "value": "Trial"
+                }
+              ],
+              "value": "ALL"
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "LENGTH"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": 0
+                },
+                {
+                  "label": 2250,
+                  "value": 2250
+                },
+                {
+                  "label": 2400,
+                  "value": 2400
+                },
+                {
+                  "label": 2420,
+                  "value": 2420
+                },
+                {
+                  "label": 2440,
+                  "value": 2440
+                },
+                {
+                  "label": 2470,
+                  "value": 2470
+                }
+              ],
+              "value": 0
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "WIDTH"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": 0
+                },
+                {
+                  "label": 1200,
+                  "value": 1200
+                },
+                {
+                  "label": 1220,
+                  "value": 1220
+                },
+                {
+                  "label": 1250,
+                  "value": 1250
+                }
+              ],
+              "value": 0
+            },
+            "type": "ia.input.dropdown"
+          },
+          {
+            "meta": {
+              "name": "CONSTRUCTION"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "dropdownOptionStyle": {
+                "fontSize": 20
+              },
+              "options": [
+                {
+                  "label": "ALL",
+                  "value": 0
+                },
+                {
+                  "label": "3 PLY",
+                  "value": 3
+                },
+                {
+                  "label": "4 PLY",
+                  "value": 4
+                },
+                {
+                  "label": "5 PLY",
+                  "value": 5
+                },
+                {
+                  "label": "7 PLY",
+                  "value": 7
+                },
+                {
+                  "label": "9 PLY",
+                  "value": 9
+                },
+                {
+                  "label": "11 PLY",
+                  "value": 11
+                },
+                {
+                  "label": "13 PLY",
+                  "value": 13
+                },
+                {
+                  "label": "17 PLY",
+                  "value": 17
+                },
+                {
+                  "label": "21 PLY",
+                  "value": 21
+                }
+              ],
+              "value": 0
+            },
+            "type": "ia.input.dropdown"
+          }
+        ],
+        "meta": {
+          "name": "choose_product"
+        },
+        "position": {
+          "basis": "39.5px"
+        },
+        "props": {
+          "style": {
+            "borderStyle": "solid"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "12.3px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "ReportViewer"
+        },
+        "position": {
+          "basis": "800px"
+        },
+        "propConfig": {
+          "props.params.EndDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.EndDate})"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.StartDate": {
+            "binding": {
+              "config": {
+                "expression": "toMillis({view.params.StartDate})"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.construction": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/CONSTRUCTION.props.value}"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.grade": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/GRADE.props.value}"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.length": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/LENGTH.props.value}"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.product": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/PRODUCT.props.value}"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.thickness": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/THICKNESS.props.value}"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.width": {
+            "binding": {
+              "config": {
+                "expression": "{../choose_product/WIDTH.props.value}"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "page": 1,
+          "pageCount": 3,
+          "source": "falldown_sander"
+        },
+        "type": "ia.reporting.report-viewer"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

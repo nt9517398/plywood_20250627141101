@@ -1,0 +1,650 @@
+{
+  "custom": {
+    "date_from": "2024-09-01 00:00:00",
+    "date_to": "2024-10-30 00:00:00"
+  },
+  "params": {
+    "date_from": "2024-09-01 00:00:00",
+    "date_to": "2024-10-30 00:00:00",
+    "falldown": "Out of Square"
+  },
+  "propConfig": {
+    "custom.date_from": {
+      "binding": {
+        "config": {
+          "bidirectional": true,
+          "path": "view.params.date_from"
+        },
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "custom.date_to": {
+      "binding": {
+        "config": {
+          "path": "view.params.date_to"
+        },
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "params.date_from": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.date_to": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.falldown": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.falldown"
+              },
+              "transforms": [
+                {
+                  "expression": "{value} + \u0027 Distribution\u0027",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "textStyle": {
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "400px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.columns[4].header.title": {
+            "binding": {
+              "config": {
+                "path": "this.props.data"
+              },
+              "transforms": [
+                {
+                  "code": "\treturn sum(value.getColumnAsList(4))",
+                  "type": "script"
+                },
+                {
+                  "expression": "\u0027Total Boards: \u0027+ {value}",
+                  "type": "expression"
+                }
+              ],
+              "type": "property"
+            }
+          },
+          "props.data": {
+            "binding": {
+              "config": {
+                "path": "view.params.falldown"
+              },
+              "transforms": [
+                {
+                  "code": "\tdate_from \u003d self.view.custom.date_from\n\tdate_to \u003d self.view.custom.date_to\n\tparameters \u003d {\"date_from\": date_from,\"date_to\": date_to}\n\tif value \u003d\u003d \u0027Broken Cover Face\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Broken Cover Face\", parameters)\n\tif value \u003d\u003d \u0027Waste On\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Waste On\", parameters)\n\tif value \u003d\u003d \u0027Short Centre L FRONT\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre L Front\", parameters)\n\tif value \u003d\u003d \u0027Broken Cover Back\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Broken Cover Back\", parameters)\n\tif value \u003d\u003d \u0027Short Centre W BOOTH\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre W Booth\", parameters)\n\tif value \u003d\u003d \u0027Waste Indents\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Waste Indents\", parameters)\n\tif value \u003d\u003d \u0027Delamination\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Delamination\", parameters)\n\tif value \u003d\u003d \u0027Short Centre W MIRROR\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre W Mirror\", parameters)\n\tif value \u003d\u003d \u0027Putty\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Putty\", parameters)\n\tif value \u003d\u003d \u0027Other Count\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Other Count\", parameters)\n\tif value \u003d\u003d \u0027Short Centre L BACK\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre L Back\", parameters)\n\tif value \u003d\u003d \u0027Blows\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Blows\", parameters)\n\tif value \u003d\u003d \u0027Harvester Mark\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Harvester Mark\", parameters)\n\tif value \u003d\u003d \u0027Fork/Line Dam\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Fork Line Dam\", parameters)\n\tif value \u003d\u003d \u0027Face Veneer Split\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Face Veneer Split\", parameters)\n\tif value \u003d\u003d \u0027Out of Square\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Out Of Sq\", parameters)\n\tif value \u003d\u003d \u0027Narrow Cover\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Narrow Cover\", parameters)\n\tif value \u003d\u003d \u0027Short Centre W RJ\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre W RJ\", parameters)\n\tif value \u003d\u003d \u0027LUL\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/LUL\", parameters)\n\tif value \u003d\u003d \u0027Short Centre L RJ\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Centre L RJ\", parameters)\n\tif value \u003d\u003d \u0027Sand Through\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Sand Through\", parameters)\n\tif value \u003d\u003d \u0027Chain Mark\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Chain Mark\", parameters)\n\tif value \u003d\u003d \u0027Groove Not Centre\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Groove Not Centre\", parameters)\n\tif value \u003d\u003d \u0027Too Thin\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Too Thin\", parameters)\n\tif value \u003d\u003d \u0027Wrong Constructions\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Wrong Construction\", parameters)\n\tif value \u003d\u003d \u0027Short Cover\u0027:\n\t\treturn system.db.runNamedQuery(\"falldown_sander/site_falldown_sander/site_falldown_sander_reverse/Short Cover\", parameters)\n",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "columns": [
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "thickness",
+              "filter": {
+                "boolean": {
+                  "condition": ""
+                },
+                "date": {
+                  "condition": "",
+                  "value": ""
+                },
+                "enabled": false,
+                "number": {
+                  "condition": "",
+                  "value": ""
+                },
+                "string": {
+                  "condition": "",
+                  "value": ""
+                },
+                "visible": "on-hover"
+              },
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "center",
+              "nullFormat": {
+                "includeNullStrings": false,
+                "nullFormatValue": "",
+                "strict": false
+              },
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "top",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "grade",
+              "filter": {
+                "boolean": {
+                  "condition": ""
+                },
+                "date": {
+                  "condition": "",
+                  "value": ""
+                },
+                "enabled": false,
+                "number": {
+                  "condition": "",
+                  "value": ""
+                },
+                "string": {
+                  "condition": "",
+                  "value": ""
+                },
+                "visible": "on-hover"
+              },
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "center",
+              "nullFormat": {
+                "includeNullStrings": false,
+                "nullFormatValue": "",
+                "strict": false
+              },
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "product",
+              "filter": {
+                "boolean": {
+                  "condition": ""
+                },
+                "date": {
+                  "condition": "",
+                  "value": ""
+                },
+                "enabled": false,
+                "number": {
+                  "condition": "",
+                  "value": ""
+                },
+                "string": {
+                  "condition": "",
+                  "value": ""
+                },
+                "visible": "on-hover"
+              },
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "center",
+              "nullFormat": {
+                "includeNullStrings": false,
+                "nullFormatValue": "",
+                "strict": false
+              },
+              "number": "value",
+              "numberFormat": "0.##%",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "number",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "construction",
+              "filter": {
+                "boolean": {
+                  "condition": ""
+                },
+                "date": {
+                  "condition": "",
+                  "value": ""
+                },
+                "enabled": false,
+                "number": {
+                  "condition": "",
+                  "value": ""
+                },
+                "string": {
+                  "condition": "",
+                  "value": ""
+                },
+                "visible": "on-hover"
+              },
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "justify": "auto",
+              "nullFormat": {
+                "includeNullStrings": false,
+                "nullFormatValue": "",
+                "strict": false
+              },
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "total_count",
+              "filter": {
+                "boolean": {
+                  "condition": ""
+                },
+                "date": {
+                  "condition": "",
+                  "value": ""
+                },
+                "enabled": false,
+                "number": {
+                  "condition": "",
+                  "value": ""
+                },
+                "string": {
+                  "condition": "",
+                  "value": ""
+                },
+                "visible": "on-hover"
+              },
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                }
+              },
+              "justify": "auto",
+              "nullFormat": {
+                "includeNullStrings": false,
+                "nullFormatValue": "",
+                "strict": false
+              },
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            }
+          ],
+          "filter": {
+            "results": {
+              "enabled": true
+            }
+          },
+          "headerGroups": [
+            [
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "thickness"
+              }
+            ],
+            [
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": "grade"
+              }
+            ],
+            [],
+            [],
+            []
+          ],
+          "pager": {
+            "initialOption": 50
+          },
+          "rows": {
+            "striped": {
+              "color": {
+                "even": "#004B3A",
+                "odd": "#2B2B2B"
+              }
+            }
+          },
+          "selection": {
+            "data": [
+              {
+                "construction": 5,
+                "grade": "CD",
+                "product": "PlyFloor",
+                "thickness": 12,
+                "total_count": 2
+              }
+            ],
+            "mode": "multiple interval",
+            "selectedColumn": "total_count",
+            "selectedRow": 15
+          }
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
