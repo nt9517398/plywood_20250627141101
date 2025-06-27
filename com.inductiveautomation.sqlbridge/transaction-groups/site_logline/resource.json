@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "Administrator",
+      "timestamp": "2024-08-22T00:38:58Z"
+    },
+    "lastModificationSignature": "41233b8ce5437d7bcb6d2084e410734c0e3af7b79bb954fa3d8545d4cc7c69ba"
+  }
+}
