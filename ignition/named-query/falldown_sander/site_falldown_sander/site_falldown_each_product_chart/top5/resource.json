@@ -1,0 +1,65 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "falldown_sander",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "1f5cf6f3b50c5b87ccc7b654c62835a56b3c4c5c587483212759c92df12c3485",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "Administrator",
+      "timestamp": "2025-05-13T05:08:04Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "date_from",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "date_to",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "thickness",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "grade",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "product",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "construction",
+        "sqlType": 2
+      }
+    ]
+  }
+}
