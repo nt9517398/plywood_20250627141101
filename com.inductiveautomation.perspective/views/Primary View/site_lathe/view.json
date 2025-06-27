@@ -1,0 +1,3468 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1065,
+      "width": 1690
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "287px"
+            },
+            "props": {
+              "text": "PLY1 LATHE ",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 30,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "1351px"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "41px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "crbw-qcU",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Pop Up/Popup-lathe-roundup-offset",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button"
+            },
+            "position": {
+              "basis": "218px",
+              "display": false
+            },
+            "props": {
+              "image": {
+                "height": 35,
+                "source": "/system/images/RYAN/arrow-pointer-or-click-button-icon-vector-20788077.jpg",
+                "width": 35
+              },
+              "style": {
+                "backgroundColor": "#FFFFFF"
+              },
+              "text": "ROUND UP OFFSET"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "9px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zbVA5tTL",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Pop Up/Popup_lathe_setpoints",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "basis": "218px"
+            },
+            "props": {
+              "image": {
+                "height": 35,
+                "source": "/system/images/RYAN/arrow-pointer-or-click-button-icon-vector-20788077.jpg",
+                "width": 35
+              },
+              "style": {
+                "backgroundColor": "#FFFFFF"
+              },
+              "text": "SETPOINTS HISTORY"
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "18px"
+        },
+        "props": {
+          "justify": "flex-end",
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "800px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "ROUNDUP SPEED SETPOINT",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": " PEELING SPEED SETPOINT",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "ROTATIONAL SPEED (LIVE)",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "ROUNDUP RADIUS (LIVE)",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "AVG BLOCK YIELD",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_4"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "CORE TEMPERATURE (LIVE)",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_6"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "SPINOUT RATE LAST 100\n",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_5"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "LAST SPINOUT DIAMETER",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "38px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid",
+                "borderWidth": 0.5
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/HMI_Lathe_Roundup_Speed"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/Peeling_Speed_Setpoint"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/HMI_Diag_LTH_MainDRV_ActSpeed2"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "color": "#22FF00",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/Data_RoundupRad"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "###",
+                          "type": "format"
+                        },
+                        {
+                          "expression": "{value}/10 + \" mm\"",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "color": "#22FF00",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_2/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_2/DateTo.props.value}"
+                        },
+                        "queryPath": "site_lathe/site_xy_yield_avg",
+                        "returnFormat": "scalar"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#",
+                          "type": "format"
+                        },
+                        {
+                          "expression": "{value} + \" %\"",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "color": "#22FF00",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_4"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/core/_TemperaturePoint3"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        },
+                        {
+                          "expression": "{value} + \" °C\"",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "color": "#22FF00",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_5"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_lathe/Alarms/spinouts_rate_last100"
+                      },
+                      "transforms": [
+                        {
+                          "expression": "{value} + \" %\"",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "color": "#22FF00",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label_5"
+                    },
+                    "position": {
+                      "basis": "580px",
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "parameters": {
+                              "date_from": "{...../FlexContainer_2/DateFrom.props.value}",
+                              "date_to": "{...../FlexContainer_2/DateTo.props.value}"
+                            },
+                            "queryPath": "site_lathe/core_drop/last_spinout_diameter",
+                            "returnFormat": "scalar"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "{value} + \" mm\"",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2B2B2B",
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "color": "#22FF00",
+                        "fontSize": 18,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_6"
+                    },
+                    "position": {
+                      "basis": "580px",
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "parameters": {
+                              "date_from": "{...../FlexContainer_2/DateFrom.props.value}",
+                              "date_to": "{...../FlexContainer_2/DateTo.props.value}"
+                            },
+                            "queryPath": "site_lathe/core_drop/last_spinout_t_stamp",
+                            "returnFormat": "scalar"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "\"at \" + dateformat({value},\"HH:mm:ss a\")",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#2B2B2B",
+                        "textAlign": "center"
+                      },
+                      "textStyle": {
+                        "color": "#22FF00",
+                        "fontSize": 18,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "580px",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#2B2B2B"
+                  },
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "36.5px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "76px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "borderStyle": "double",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "custom.datefrom_first_stacked_sheet": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "date_from": "{this.props.value}"
+                    },
+                    "queryPath": "site_lathe/wet_stacker/first_stacked_sheet",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "if (dateExtract(now(0),\"hour\")\u003e0,if (dateExtract(now(0),\"hour\")\u003c 4,settime((dateArithmetic(now(0), -1, \"days\")),04,00,00),settime(now(0),04,00,00)),0)",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "if (dateExtract(now(0),\"hour\")\u003e0,if (dateExtract(now(0),\"hour\")\u003c 4,settime((dateArithmetic(now(0), -1, \"days\")),04,00,00),settime(now(0),04,00,00)),0)"
+                        }
+                      ],
+                      "outputType": "expression",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Jan 23,2025 04:00:00 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "custom.lastest_stem": {
+                "binding": {
+                  "config": {
+                    "queryPath": "site_lathe/infeed/total/lastest_stem",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "now(if({value},60000,0))",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Jan 23,2025 10:36:28 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "custom": {
+              "live": true
+            },
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.custom.live \u003d not self.custom.live"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button"
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "propConfig": {
+              "props.style.classes": {
+                "binding": {
+                  "config": {
+                    "path": "this.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "LIVE"
+                        }
+                      ],
+                      "outputType": "style-list",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#808080"
+              },
+              "text": "LIVE",
+              "textStyle": {
+                "color": "#FFFFFF"
+              }
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "27px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "if({[default]site_lathe/infeed/H0001},\u0027H0001\u0027,if({[default]site_lathe/infeed/H0002},\u0027H0002\u0027,if({[default]site_lathe/infeed/H0003},\u0027H0003\u0027,if({[default]site_lathe/infeed/H0004},\u0027H0004\u0027,if({[default]site_lathe/infeed/TempSupplier},\u0027TempSupplier\u0027,if({[default]site_lathe/infeed/RESCAN},\u0027RESCAN\u0027,if({[default]site_lathe/infeed/CALIBRATION},\u0027CALIBRATION\u0027,0)))))))"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "\u0027MPM DATA\u0027 + \":                     \" + {value}",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "32px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "USED",
+                              "textStyle": {
+                                "textAlign": "center"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "339.9px"
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "justify": "space-around",
+                          "style": {
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "32px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "REJECTS",
+                              "textStyle": {
+                                "textAlign": "center"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left_0"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "alignItems": "center",
+                          "justify": "space-around",
+                          "style": {
+                            "borderStyle": "solid",
+                            "borderWidth": 1
+                          }
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "31px"
+                    },
+                    "props": {
+                      "justify": "space-evenly",
+                      "style": {
+                        "borderStyle": "solid",
+                        "borderWidth": 1
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "STEMS",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0",
+                                      "tooltip": {
+                                        "enabled": true,
+                                        "text": "Length \u003e 4000"
+                                      }
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/total/total_stems",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "{value} - {..../right/stems/Label_0.props.text}",
+                                              "type": "expression"
+                                            },
+                                            {
+                                              "expression": "if({value}\u003c0,0,{value})",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "stems"
+                                },
+                                "position": {
+                                  "basis": "63px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "Avg Dia",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "custom": {
+                                      "DesiredRecovery_2": 56.19,
+                                      "DesiredRecovery_3": 55.19,
+                                      "DesiredRecovery_4": 52
+                                    },
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "custom.x_value": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "{this.props.text} / 10"
+                                          },
+                                          "type": "expr"
+                                        },
+                                        "onChange": {
+                                          "enabled": null,
+                                          "script": "\t\t\timport system\n\t\t\tfrom org.apache.commons.math3.analysis.interpolation import LinearInterpolator\n\t\t\tfrom org.apache.commons.math3.analysis.polynomials import PolynomialSplineFunction\n\t\t\t\n\t\t\t# Example data points\n\t\t\tx_data \u003d [18, 19, 20, 21, 22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]  # Replace with your x values\n\t\t\ty_data \u003d [37,41,45,46,47,49,51,53,54,54,55,56,57,57,58,59,59,60,60,61,61,61,62,62,62,62,62,62]  # Replace with your y values\n\t\t\t\n\t\t\t# Example data points for x-z\n\t\t\tz_data \u003d [34,39,42,42,47,47,48,51,52,53,54,55,56,57,57,58,59,59,59,60,60,61,61,61,62,62,62,62]  # Replace with your z values\n\t\t\t\n\t\t\t# Example data points for x-f\n\t\t\tf_data \u003d [35,31,37,39,41,43,45,46,49,48,51,52,52,54,54,54,55,56,56,57,57,58,58,58,59,59,59,59]  # Replace with your f values\n\t\t\t\n\t\t\t# Create a linear interpolator for x-y\n\t\t\tinterpolator_xy \u003d LinearInterpolator()\n\t\t\tinterpolation_function_xy \u003d interpolator_xy.interpolate(x_data, y_data)\n\t\t\t\n\t\t\t# Create a linear interpolator for x-z\n\t\t\tinterpolator_xz \u003d LinearInterpolator()\n\t\t\tinterpolation_function_xz \u003d interpolator_xz.interpolate(x_data, z_data)\n\t\t\t\n\t\t\t# Create a linear interpolator for x-f\n\t\t\tinterpolator_xf \u003d LinearInterpolator()\n\t\t\tinterpolation_function_xf \u003d interpolator_xf.interpolate(x_data, f_data)\n\t\t\t\n\t\t\t# Find the value on the curve at a given point\n\t\t\t\n\t\t\tx_value \u003d self.custom.x_value\n\t\t\t\n\t\t\t# Interpolate for x-y\n\t\t\tinterpolated_value_xy \u003d interpolation_function_xy.value(x_value)\n\t\t\t\n\t\t\t# Interpolate for x-z\n\t\t\tinterpolated_value_xz \u003d interpolation_function_xz.value(x_value)\n\t\t\t\n\t\t\t# Interpolate for x-f\n\t\t\tinterpolated_value_xf \u003d interpolation_function_xf.value(x_value)\n\t\t\t\n\t\t\t# Print the interpolated values\n\t\t\tself.custom.DesiredRecovery_2\u003d interpolated_value_xy\n\t\t\tself.custom.DesiredRecovery_3\u003d interpolated_value_xz\n\t\t\tself.custom.DesiredRecovery_4\u003d interpolated_value_xf"
+                                        }
+                                      },
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/total/total_avgdiameter",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "if({value}\u003d null, 0, numberFormat({value}, \"#0.0\u0027 mm\u0027\") )",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "avgdia"
+                                },
+                                "position": {
+                                  "basis": "93px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "Volume",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/total/total_infeed_vol",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "if({value} \u003d null, 0, {value})",
+                                              "type": "expression"
+                                            },
+                                            {
+                                              "expression": "{value} - {..../right/volume/Label_0.props.text}",
+                                              "type": "expression"
+                                            },
+                                            {
+                                              "expression": "numberFormat(if({value}\u003c0,0,{value}),\"#0.0\u0027 m³\u0027\")",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "style": {
+                                        "borderWidth": 1
+                                      },
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "volume"
+                                },
+                                "position": {
+                                  "basis": "77px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "left"
+                            },
+                            "position": {
+                              "basis": "338px"
+                            },
+                            "props": {
+                              "justify": "space-around",
+                              "style": {
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "STEMS",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/rejects/rejects_stems",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "stems"
+                                },
+                                "position": {
+                                  "basis": "63px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "Avg Dia",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/rejects/reject_avgdiameter",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "if({value} \u003d null, 0 ,numberFormat({value},\"#0.0\u0027 mm\u0027\"))",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "avgdia"
+                                },
+                                "position": {
+                                  "basis": "83px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "props": {
+                                      "text": "Volume",
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_0"
+                                    },
+                                    "position": {
+                                      "basis": "107px",
+                                      "grow": 1
+                                    },
+                                    "propConfig": {
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "parameters": {
+                                              "date_from": "{........./FlexContainer_2/DateFrom.props.value}",
+                                              "date_to": "{........./FlexContainer_2/DateTo.props.value}"
+                                            },
+                                            "queryPath": "site_lathe/infeed/rejects/reject_infeed_vol",
+                                            "returnFormat": "scalar"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "if({value} \u003d null,0,numberFormat({value},\"#0.0\u0027 m³\u0027\"))",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "query"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "textAlign": "CENTER"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "volume"
+                                },
+                                "position": {
+                                  "basis": "63px"
+                                },
+                                "props": {
+                                  "direction": "column"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "right"
+                            },
+                            "position": {
+                              "basis": "324px"
+                            },
+                            "props": {
+                              "justify": "space-around",
+                              "style": {
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              }
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "data"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "justify": "center"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "data"
+                    },
+                    "position": {
+                      "basis": "143px"
+                    },
+                    "props": {
+                      "direction": "column"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Left"
+                },
+                "position": {
+                  "basis": "665px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "props": {
+                      "text": "WET STACKER DATA\n",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "fallback": "#FFFFFF",
+                                      "inputType": "scalar",
+                                      "mappings": [
+                                        {
+                                          "input": 240,
+                                          "output": "#00FF00"
+                                        }
+                                      ],
+                                      "outputType": "color",
+                                      "type": "map"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "text": "2.4 mm",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "fallback": "#FFFFFF",
+                                      "inputType": "scalar",
+                                      "mappings": [
+                                        {
+                                          "input": 300,
+                                          "output": "#00FF00"
+                                        }
+                                      ],
+                                      "outputType": "color",
+                                      "type": "map"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "text": "3.0 mm",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.style.color": {
+                                "binding": {
+                                  "config": {
+                                    "fallbackDelay": 2.5,
+                                    "mode": "direct",
+                                    "tagPath": "[default]site_lathe/wet_stacker/bin1_recipe_thickness_after"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "fallback": "#FFFFFF",
+                                      "inputType": "scalar",
+                                      "mappings": [
+                                        {
+                                          "input": 400,
+                                          "output": "#00FF00"
+                                        }
+                                      ],
+                                      "outputType": "color",
+                                      "type": "map"
+                                    }
+                                  ],
+                                  "type": "tag"
+                                }
+                              }
+                            },
+                            "props": {
+                              "text": "4.0 mm",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_4"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Total Sheets",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_3"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Vol (m³)",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "mm"
+                        },
+                        "position": {
+                          "basis": "104px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Bin 1",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin1/noofsheet_bin1_240",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin1/noofsheet_bin1_300",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin1/noofsheet_bin1_400",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_4"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text} + {../Label_1.props.text} + {../Label_2.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_3"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin1/totalvol_bin1",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0,{value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin1"
+                        },
+                        "position": {
+                          "basis": "68px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Bin 2",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin2/noofsheet_bin2_240",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin2/noofsheet_bin2_300",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin2/noofsheet_bin2_400",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_4"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text} + {../Label_1.props.text} + {../Label_2.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_3"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin2/totalvol_bin2",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0,{value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin2"
+                        },
+                        "position": {
+                          "basis": "68px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Bin 3",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin3/noofsheet_bin3_240",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin3/noofsheet_bin3_300",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin3/noofsheet_bin3_400",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_4"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text} + {../Label_1.props.text} + {../Label_2.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_3"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin3/totalvol_bin3",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin3"
+                        },
+                        "position": {
+                          "basis": "68px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "text": "Bin 4",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin4/noofsheet_bin4_240",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin4/noofsheet_bin4_300",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin4/noofsheet_bin4_400",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_4"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{../Label_0.props.text} + {../Label_1.props.text} + {../Label_2.props.text}"
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_3"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "parameters": {
+                                      "date_from": "{......./FlexContainer_2/DateFrom.props.value}",
+                                      "date_to": "{......./FlexContainer_2/DateTo.props.value}"
+                                    },
+                                    "queryPath": "site_lathe/wet_stacker/bin4/totalvol_bin4",
+                                    "returnFormat": "scalar"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "expression": "if({value} \u003d null, 0, {value})",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "query"
+                                }
+                              }
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin4"
+                        },
+                        "position": {
+                          "basis": "68px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "meta": {
+                              "name": "Label"
+                            },
+                            "position": {
+                              "basis": "107px"
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_0"
+                            },
+                            "position": {
+                              "basis": "200px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_2"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "props": {
+                              "style": {
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              },
+                              "text": "Total ",
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "Label_1"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{.../bin1/Label_4.props.text} + {.../bin2/Label_4.props.text}  + {.../bin3/Label_4.props.text}   + {.../bin4/Label_4.props.text} "
+                                  },
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              },
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          },
+                          {
+                            "meta": {
+                              "name": "totalvol"
+                            },
+                            "position": {
+                              "basis": "107px",
+                              "grow": 1
+                            },
+                            "propConfig": {
+                              "props.text": {
+                                "binding": {
+                                  "config": {
+                                    "expression": "{.../bin1/Label_3.props.text}+ {.../bin2/Label_3.props.text} + {.../bin3/Label_3.props.text} + {.../bin4/Label_3.props.text}"
+                                  },
+                                  "transforms": [
+                                    {
+                                      "formatType": "numeric",
+                                      "formatValue": "#.##",
+                                      "type": "format"
+                                    },
+                                    {
+                                      "expression": "{value} + \" m³\"",
+                                      "type": "expression"
+                                    }
+                                  ],
+                                  "type": "expr"
+                                }
+                              }
+                            },
+                            "props": {
+                              "style": {
+                                "borderStyle": "solid",
+                                "borderWidth": 1
+                              },
+                              "textStyle": {
+                                "textAlign": "CENTER"
+                              }
+                            },
+                            "type": "ia.display.label"
+                          }
+                        ],
+                        "meta": {
+                          "name": "totalvol"
+                        },
+                        "position": {
+                          "basis": "162px"
+                        },
+                        "props": {
+                          "direction": "column"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "338px",
+                      "grow": 1
+                    },
+                    "props": {
+                      "justify": "space-around",
+                      "style": {
+                        "borderStyle": "solid",
+                        "borderWidth": 1
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "right"
+                },
+                "position": {
+                  "basis": "665px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.recovery \u003d 1\n\tself.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.run_rate \u003d 1\n\tself.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.spinouts \u003d 1"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "infeed_outfeed_data"
+            },
+            "position": {
+              "basis": "208px"
+            },
+            "props": {
+              "justify": "space-around"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "247.4px"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 30,
+                            "textAlign": "left"
+                          },
+                          "text": "Actual Recovery:"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "data",
+                          "tooltip": {
+                            "enabled": true,
+                            "text": "Actual Recovery"
+                          }
+                        },
+                        "position": {
+                          "basis": "163.2px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "expression": "({...../infeed_outfeed_data/right/FlexContainer/totalvol/totalvol.props.text}/{...../infeed_outfeed_data/Left/data/data/left/volume/Label_0.props.text})*100"
+                              },
+                              "transforms": [
+                                {
+                                  "formatType": "numeric",
+                                  "formatValue": "#.#",
+                                  "type": "format"
+                                },
+                                {
+                                  "expression": "{value} + \" %\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 35,
+                            "textAlign": "right"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "200px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label",
+                          "tooltip": {
+                            "enabled": true,
+                            "text": "Based on the average diameter"
+                          }
+                        },
+                        "position": {
+                          "basis": "250px"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 30,
+                            "textAlign": "left"
+                          },
+                          "text": "Target Recovery:"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "desired_recovery",
+                          "tooltip": {
+                            "enabled": true
+                          }
+                        },
+                        "position": {
+                          "basis": "160.6px"
+                        },
+                        "propConfig": {
+                          "custom.ActualDesiredRecovery_2": {
+                            "binding": {
+                              "config": {
+                                "expression": "(({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_0.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*{this.custom.DesiredRecovery_2})"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.ActualDesiredRecovery_3": {
+                            "binding": {
+                              "config": {
+                                "expression": "(({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_1.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*{this.custom.DesiredRecovery_3})"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.ActualDesiredRecovery_4": {
+                            "binding": {
+                              "config": {
+                                "expression": "(({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_2.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*{this.custom.DesiredRecovery_4})"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.DesiredRecovery_2": {
+                            "binding": {
+                              "config": {
+                                "expression": "{...../infeed_outfeed_data/Left/data/data/left/avgdia/Label_0.custom.DesiredRecovery_2}"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.DesiredRecovery_3": {
+                            "binding": {
+                              "config": {
+                                "expression": "{...../infeed_outfeed_data/Left/data/data/left/avgdia/Label_0.custom.DesiredRecovery_3}"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.DesiredRecovery_4": {
+                            "binding": {
+                              "config": {
+                                "expression": "{...../infeed_outfeed_data/Left/data/data/left/avgdia/Label_0.custom.DesiredRecovery_4}"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.percentageof2": {
+                            "binding": {
+                              "config": {
+                                "expression": "({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_0.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_0.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.percentageof3": {
+                            "binding": {
+                              "config": {
+                                "expression": "({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_1.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_1.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "custom.percentageof4": {
+                            "binding": {
+                              "config": {
+                                "expression": "({...../infeed_outfeed_data/right/FlexContainer/bin1/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin2/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin3/Label_2.props.text}+{...../infeed_outfeed_data/right/FlexContainer/bin4/Label_2.props.text})/{...../infeed_outfeed_data/right/FlexContainer/totalvol/Label_1.props.text}*100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "meta.tooltip.text": {
+                            "binding": {
+                              "config": {
+                                "expression": "\"2.4mm-\" + numberFormat({this.custom.percentageof2},\"#0.0\")+ \"%\" + \"   3.0mm-\" + numberFormat({this.custom.percentageof3},\"#0.0\")+ \" %\" + \"   4.0mm-\" + numberFormat({this.custom.percentageof4},\"#0.0\")+ \" %\""
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "expression": "{this.custom.ActualDesiredRecovery_2} + {this.custom.ActualDesiredRecovery_3} + {this.custom.ActualDesiredRecovery_4}"
+                              },
+                              "transforms": [
+                                {
+                                  "formatType": "numeric",
+                                  "formatValue": "#.#",
+                                  "type": "format"
+                                },
+                                {
+                                  "expression": "{value} + \" %\"",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 35,
+                            "textAlign": "right"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "200px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "custom": {
+                  "DesiredRecovery_2": "value",
+                  "DesiredRecovery_3": "value",
+                  "DesiredRecovery_4": "value"
+                },
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.run_rate \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.spinouts \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.recovery \u003d 1"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "recovery"
+                },
+                "position": {
+                  "basis": "702px"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "center",
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "borderStyle": "ridge"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "10px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "148px"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": 30,
+                        "textAlign": "center"
+                      },
+                      "text": "Run Rate:"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_0"
+                    },
+                    "position": {
+                      "basis": "288px"
+                    },
+                    "propConfig": {
+                      "custom.datediff": {
+                        "binding": {
+                          "config": {
+                            "expression": "if(dateIsAfter({...../FlexContainer_2/DateFrom.props.value},{...../FlexContainer_2/DateFrom.custom.datefrom_first_stacked_sheet}),1,0)"
+                          },
+                          "transforms": [
+                            {
+                              "expression": "if({value}\u003d0,{...../FlexContainer_2/DateFrom.custom.datefrom_first_stacked_sheet},{...../FlexContainer_2/DateFrom.props.value})",
+                              "type": "expression"
+                            },
+                            {
+                              "expression": "dateDiff({value},{...../FlexContainer_2/DateTo.props.value}, \"hour\") \r\n",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      },
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "expression": "{..../infeed_outfeed_data/right/FlexContainer/totalvol/totalvol.props.text}/{this.custom.datediff}"
+                          },
+                          "transforms": [
+                            {
+                              "formatType": "numeric",
+                              "formatValue": "#.#",
+                              "type": "format"
+                            },
+                            {
+                              "expression": "{value} + \"    m³/h\"",
+                              "type": "expression"
+                            }
+                          ],
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": 35,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.recovery \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.spinouts \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.run_rate \u003d 1"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "run_rate"
+                },
+                "position": {
+                  "basis": "702px"
+                },
+                "props": {
+                  "justify": "center",
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "borderStyle": "ridge"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "10px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "226px"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 30,
+                            "textAlign": "left"
+                          },
+                          "text": "Spinouts:"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "186.1px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "parameters": {
+                                  "date_from": "{....../FlexContainer_2/DateFrom.props.value}",
+                                  "date_to": "{....../FlexContainer_2/DateTo.props.value}"
+                                },
+                                "queryPath": "site_lathe/core_drop/total_spinouts",
+                                "returnFormat": "scalar"
+                              },
+                              "type": "query"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 35,
+                            "textAlign": "center"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "200px"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "236px"
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 30,
+                            "textAlign": "left"
+                          },
+                          "text": "Spinout Rate:"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "basis": "176.1px"
+                        },
+                        "propConfig": {
+                          "props.text": {
+                            "binding": {
+                              "config": {
+                                "parameters": {
+                                  "date_from": "{....../FlexContainer_2/DateFrom.props.value}",
+                                  "date_to": "{....../FlexContainer_2/DateTo.props.value}"
+                                },
+                                "queryPath": "site_lathe/core_drop/total_core_drop",
+                                "returnFormat": "scalar"
+                              },
+                              "transforms": [
+                                {
+                                  "expression": "numberFormat({.../FlexContainer/Label_0.props.text}/{value}, \u0027#.#%\u0027)",
+                                  "type": "expression"
+                                }
+                              ],
+                              "type": "query"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "fontSize": 35,
+                            "textAlign": "CENTER"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "200px"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.run_rate \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.recovery \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.spinouts \u003d 1"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "spinouts"
+                },
+                "position": {
+                  "basis": "702px"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "center",
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "borderStyle": "ridge"
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "FlexContainer_4"
+                },
+                "position": {
+                  "basis": "10px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "538px"
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": 30,
+                        "textAlign": "center"
+                      },
+                      "text": "Average Core Temperature:"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_0"
+                    },
+                    "position": {
+                      "basis": "409px"
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "parameters": {
+                              "date_from": "{...../FlexContainer_2/DateFrom.props.value}",
+                              "date_to": "{...../FlexContainer_2/DateTo.props.value}"
+                            },
+                            "queryPath": "site_lathe/core_drop/core_temp",
+                            "returnFormat": "scalar"
+                          },
+                          "transforms": [
+                            {
+                              "formatType": "numeric",
+                              "formatValue": "#.#°C",
+                              "type": "format"
+                            }
+                          ],
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "fontSize": 35,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "script": "\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.run_rate \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.recovery \u003d 0\n\tself.parent.parent.parent.getChild(\"FlexContainer_0\").getChild(\"EmbeddedView\").props.params.spinouts \u003d 1"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "spinouts_0"
+                },
+                "position": {
+                  "basis": "702px"
+                },
+                "props": {
+                  "justify": "center",
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "borderStyle": "ridge"
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_3"
+            },
+            "position": {
+              "basis": "124px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "370px"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "EmbeddedView"
+            },
+            "position": {
+              "basis": "320px",
+              "grow": 1
+            },
+            "propConfig": {
+              "props.params.date_from": {
+                "binding": {
+                  "config": {
+                    "path": ".../FlexContainer_2/DateFrom.props.value"
+                  },
+                  "type": "property"
+                }
+              },
+              "props.params.date_to": {
+                "binding": {
+                  "config": {
+                    "path": ".../FlexContainer_2/DateTo.props.value"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "params": {
+                "recovery": true,
+                "run_rate": true,
+                "spinouts": true
+              },
+              "path": "backend/recovery_graph"
+            },
+            "type": "ia.display.view"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_0"
+        },
+        "position": {
+          "basis": "404px"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,698 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1065,
+      "width": 1690
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "10px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#000000"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "800px",
+              "grow": 1
+            },
+            "props": {
+              "text": "PLY2 FALLDOWN SANDER",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 25,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "start",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "9SA1Tu1W",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "position": {
+                      "right": 170
+                    },
+                    "positionType": "exact",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "EndDate": "{/root/datetime/DateTo.props.value}",
+                      "StartDate": "{/root/datetime/DateFrom.props.value}"
+                    },
+                    "viewPath": "Pop Up/popup_falldown_sander_comment",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "basis": "531px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid"
+              },
+              "text": "COMMENTS REPORT",
+              "textStyle": {
+                "color": "#FFFFFF",
+                "fontSize": 23
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "9TotE5yK",
+                    "modal": false,
+                    "overlayDismiss": false,
+                    "position": {
+                      "right": 170
+                    },
+                    "positionType": "exact",
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewParams": {
+                      "EndDate": "{/root/datetime/DateTo.props.value}",
+                      "StartDate": "{/root/datetime/DateFrom.props.value}"
+                    },
+                    "viewPath": "Pop Up/Popup_falldown_sander_report",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_1"
+            },
+            "position": {
+              "basis": "531px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid"
+              },
+              "text": "FALLDOWN SANDER DETAIL REPORT",
+              "textStyle": {
+                "color": "#FFFFFF",
+                "fontSize": 23
+              }
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "41px"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_4"
+        },
+        "position": {
+          "basis": "10px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#000000"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "800px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "TOTAL PRODUCT ",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "800px"
+                },
+                "props": {
+                  "text": "TOTAL FALLDOWN",
+                  "textStyle": {
+                    "fontSize": 14,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "38px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid",
+                "borderWidth": 0.5
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "880px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../datetime/DateFrom.props.value}",
+                          "date_to": "{..../datetime/DateTo.props.value}"
+                        },
+                        "queryPath": "falldown_sander/site_falldown_sander/total_product",
+                        "returnFormat": "scalar"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "dom": {
+                    "onClick": {
+                      "config": {
+                        "draggable": true,
+                        "id": "eSo5rm9U",
+                        "modal": true,
+                        "overlayDismiss": true,
+                        "resizable": true,
+                        "showCloseIcon": true,
+                        "type": "open",
+                        "viewParams": {
+                          "date_from": "{/root/datetime/DateFrom.props.value}",
+                          "date_to": "{/root/datetime/DateTo.props.value}"
+                        },
+                        "viewPath": "Pop Up/Popup_falldown_sander_each_product",
+                        "viewportBound": false
+                      },
+                      "scope": "C",
+                      "type": "popup"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "807.1px"
+                },
+                "propConfig": {
+                  "custom.falldown": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../datetime/DateFrom.props.value}",
+                          "date_to": "{..../datetime/DateTo.props.value}"
+                        },
+                        "queryPath": "falldown_sander/site_falldown_sander/site_total_falldown",
+                        "returnFormat": "scalar"
+                      },
+                      "type": "query"
+                    }
+                  },
+                  "custom.falldown_each_product": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../datetime/DateFrom.props.value}",
+                          "date_to": "{..../datetime/DateTo.props.value}"
+                        },
+                        "queryPath": "falldown_sander/site_falldown_sander/site_total_falldown_each_product"
+                      },
+                      "type": "query"
+                    }
+                  },
+                  "custom.percent_falldown": {
+                    "binding": {
+                      "config": {
+                        "path": "../Label_3.props.text"
+                      },
+                      "transforms": [
+                        {
+                          "expression": "{this.custom.falldown}/{value}*100",
+                          "type": "expression"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  },
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "{this.custom.falldown} + \" / \" +  numberFormat({this.custom.percent_falldown}, \"#0.00\u0027%\u0027\")"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "40.8px",
+              "grow": 1
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "60px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "borderStyle": "double",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "custom.datefrom_first_stacked_sheet": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "date_from": "{this.props.value}"
+                    },
+                    "queryPath": "site_lathe/wet_stacker/first_stacked_sheet",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "toMillis(dateFormat(dateArithmetic(now(0),0,\u0027days\u0027), \"yyyy-MM-01 00:00:00\"))"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "May 1,2025 12:00:00 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "custom.lastest_stem": {
+                "binding": {
+                  "config": {
+                    "queryPath": "site_lathe/infeed/total/lastest_stem",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "now(0)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "May 14,2025 11:49:19 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "16px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "624.3px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_2"
+            },
+            "position": {
+              "basis": "27.4px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.parent.parent.getChild(\"ViewCanvas\").props.instances[0].viewPath \u003d \u0027Objects/site_falldown_overall\u0027"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "falldown_overall"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid"
+              },
+              "text": "OVERALL",
+              "textStyle": {
+                "color": "#FFFFFF",
+                "fontSize": 23
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_3"
+            },
+            "position": {
+              "basis": "27.4px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.parent.parent.getChild(\"ViewCanvas\").props.instances[0].viewPath \u003d \u0027Objects/site_falldown_xy_chart_trend\u0027"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "TOP_5_TREND"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid"
+              },
+              "text": "TOP 5 TREND",
+              "textStyle": {
+                "color": "#FFFFFF",
+                "fontSize": 23
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer_4"
+            },
+            "position": {
+              "basis": "27.4px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "datetime"
+        },
+        "position": {
+          "basis": "27px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "ViewCanvas"
+        },
+        "position": {
+          "basis": "320px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.instances[0].viewParams.date_from": {
+            "binding": {
+              "config": {
+                "path": "../datetime/DateFrom.props.value"
+              },
+              "type": "property"
+            }
+          },
+          "props.instances[0].viewParams.date_to": {
+            "binding": {
+              "config": {
+                "path": "../datetime/DateTo.props.value"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "instances": [
+            {
+              "bottom": "auto",
+              "height": "auto",
+              "left": "0px",
+              "position": "absolute",
+              "right": "auto",
+              "style": {
+                "classes": ""
+              },
+              "top": "0px",
+              "viewParams": {},
+              "viewPath": "Objects/site_falldown_xy_chart_trend",
+              "width": "auto",
+              "zIndex": "auto"
+            }
+          ],
+          "transitionSettings": {
+            "duration": "1s",
+            "timingFunction": "linear"
+          }
+        },
+        "type": "ia.display.viewcanvas"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

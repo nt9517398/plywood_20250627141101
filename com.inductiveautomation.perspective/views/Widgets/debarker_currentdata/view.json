@@ -1,0 +1,1616 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 333,
+      "width": 1165
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "spacing1"
+                },
+                "position": {
+                  "basis": "64px"
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "210.9px"
+                },
+                "props": {
+                  "text": " DEBARKER",
+                  "textStyle": {
+                    "borderStyle": "none",
+                    "color": "#E8E8E8",
+                    "fill": "#FFFDFD",
+                    "fontFamily": "monospace",
+                    "fontSize": 20,
+                    "fontWeight": "bolder",
+                    "outlineWidth": "10",
+                    "textAlign": "center",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase",
+                    "whiteSpace": "normal",
+                    "wordWrap": "break-word"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "spacing"
+                },
+                "position": {
+                  "basis": "669px"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "120px"
+                    },
+                    "props": {
+                      "text": "STATUS:",
+                      "textStyle": {
+                        "fontSize": 20
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Green pilot light 2"
+                        },
+                        "position": {
+                          "height": 12,
+                          "width": 23,
+                          "x": -1.09,
+                          "y": 26.822336963
+                        },
+                        "propConfig": {
+                          "meta.visible": {
+                            "binding": {
+                              "config": {
+                                "expression": "{[default]Debarker/CurrentShift/LineDownForMinutes} \u003d 0"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "elements": [
+                            {
+                              "cx": "499",
+                              "cy": "499",
+                              "fill": {
+                                "paint": "#000"
+                              },
+                              "name": "circle",
+                              "r": "499",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                              "fill": {
+                                "paint": "#0f0"
+                              },
+                              "name": "path",
+                              "style": {},
+                              "type": "path"
+                            },
+                            {
+                              "cx": "406",
+                              "cy": "405",
+                              "fill": {
+                                "paint": "#6bff6b"
+                              },
+                              "name": "circle",
+                              "r": "291",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "cx": "359",
+                              "cy": "357",
+                              "fill": {
+                                "paint": "#a3ffa3"
+                              },
+                              "name": "circle",
+                              "r": "198",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "cx": "311",
+                              "cy": "311",
+                              "fill": {
+                                "paint": "#d9ffd9"
+                              },
+                              "name": "circle",
+                              "r": "104",
+                              "style": {},
+                              "type": "circle"
+                            }
+                          ],
+                          "viewBox": "0 0 999 999"
+                        },
+                        "type": "ia.shapes.svg"
+                      },
+                      {
+                        "meta": {
+                          "name": "Red pilot light 2"
+                        },
+                        "position": {
+                          "height": 12,
+                          "width": 23,
+                          "x": -1.09,
+                          "y": 26.822336963
+                        },
+                        "propConfig": {
+                          "meta.visible": {
+                            "binding": {
+                              "config": {
+                                "expression": "{[default]Debarker/CurrentShift/LineDownForMinutes} !\u003d 0"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "elements": [
+                            {
+                              "cx": "499",
+                              "cy": "499",
+                              "fill": {
+                                "paint": "#000"
+                              },
+                              "name": "circle",
+                              "r": "499",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                              "fill": {
+                                "paint": "#f00"
+                              },
+                              "name": "path",
+                              "stroke": {
+                                "paint": "#4c4c4c",
+                                "width": "2"
+                              },
+                              "style": {},
+                              "type": "path"
+                            },
+                            {
+                              "cx": "406",
+                              "cy": "405",
+                              "fill": {
+                                "paint": "#ff6b6b"
+                              },
+                              "name": "circle",
+                              "r": "291",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                              "fill": {
+                                "paint": "#ffa3a3"
+                              },
+                              "name": "path",
+                              "style": {},
+                              "type": "path"
+                            },
+                            {
+                              "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                              "fill": {
+                                "paint": "#ffd9d9"
+                              },
+                              "name": "path",
+                              "style": {},
+                              "type": "path"
+                            }
+                          ],
+                          "viewBox": "0 0 999 999"
+                        },
+                        "type": "ia.shapes.svg"
+                      },
+                      {
+                        "meta": {
+                          "name": "Yellow pilot light 2",
+                          "visible": false
+                        },
+                        "position": {
+                          "height": 40,
+                          "width": 60,
+                          "x": 4.236680469,
+                          "y": 9.888396701
+                        },
+                        "props": {
+                          "elements": [
+                            {
+                              "cx": "499",
+                              "cy": "499",
+                              "fill": {
+                                "paint": "#000"
+                              },
+                              "name": "circle",
+                              "r": "499",
+                              "stroke": {
+                                "paint": "#4c4c4c",
+                                "width": "2"
+                              },
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                              "fill": {
+                                "paint": "#fc0"
+                              },
+                              "name": "path",
+                              "style": {},
+                              "type": "path"
+                            },
+                            {
+                              "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                              "fill": {
+                                "paint": "#ffe06b"
+                              },
+                              "name": "path",
+                              "style": {},
+                              "type": "path"
+                            },
+                            {
+                              "cx": "359",
+                              "cy": "357",
+                              "fill": {
+                                "paint": "#ffeda3"
+                              },
+                              "name": "circle",
+                              "r": "198",
+                              "style": {},
+                              "type": "circle"
+                            },
+                            {
+                              "cx": "311",
+                              "cy": "311",
+                              "fill": {
+                                "paint": "#fffad9"
+                              },
+                              "name": "circle",
+                              "r": "104",
+                              "style": {},
+                              "type": "circle"
+                            }
+                          ],
+                          "viewBox": "0 0 999 999"
+                        },
+                        "type": "ia.shapes.svg"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "height": 32,
+                          "width": 42.00000000000001,
+                          "x": 36.04,
+                          "y": 19.14
+                        },
+                        "propConfig": {
+                          "meta.visible": {
+                            "binding": {
+                              "config": {
+                                "expression": "{[default]Debarker/CurrentShift/LineDownForMinutes} !\u003d 0"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "classes": "RedFlashing"
+                          },
+                          "text": "STOP"
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "Label_0"
+                        },
+                        "position": {
+                          "height": 32,
+                          "width": 46.00000000000001,
+                          "x": 36.04,
+                          "y": 19.14
+                        },
+                        "propConfig": {
+                          "meta.visible": {
+                            "binding": {
+                              "config": {
+                                "expression": "{[default]Debarker/CurrentShift/LineDownForMinutes} \u003d 0"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "style": {
+                            "classes": "GreenFlashing",
+                            "textAlign": "center"
+                          },
+                          "text": "LIVE"
+                        },
+                        "type": "ia.display.label"
+                      }
+                    ],
+                    "meta": {
+                      "name": "CoordinateContainer"
+                    },
+                    "position": {
+                      "basis": "200px"
+                    },
+                    "type": "ia.container.coord"
+                  }
+                ],
+                "meta": {
+                  "name": "status"
+                },
+                "position": {
+                  "basis": "300px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "55px",
+              "shrink": 0
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "DateFrom"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "expression": "toLong(setTime(addDays(now(0),-0),5,0,0))"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "formattedValue": "Aug 5, 2022 5:00 AM",
+                  "inputProps": {
+                    "style": {
+                      "backgroundColor": "#004B3A",
+                      "borderStyle": "double"
+                    }
+                  },
+                  "style": {
+                    "borderStyle": "double"
+                  }
+                },
+                "type": "ia.input.date-time-input"
+              },
+              {
+                "meta": {
+                  "name": "DateTo"
+                },
+                "propConfig": {
+                  "props.value": {
+                    "binding": {
+                      "config": {
+                        "expression": "toLong(now(10))"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "enabled": false,
+                  "formattedValue": "Aug 5, 2022 9:09 AM",
+                  "inputProps": {
+                    "style": {
+                      "backgroundColor": "#004B3A",
+                      "borderStyle": "double"
+                    }
+                  },
+                  "style": {
+                    "borderStyle": "double"
+                  }
+                },
+                "type": "ia.input.date-time-input"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "1690px",
+                      "grow": 1
+                    },
+                    "propConfig": {
+                      "props.text": {
+                        "binding": {
+                          "config": {
+                            "path": "..../FlexContainer_0/Left/FlexContainer/left/total_blocks_0/Label_0.props.text"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "CURRENT DATA",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": 0,
+                                  "output": "DEBARKER IS UNAVAILABLE"
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      },
+                      "props.textStyle.color": {
+                        "binding": {
+                          "config": {
+                            "path": "..../FlexContainer_0/Left/FlexContainer/left/total_blocks_0/Label_0.props.text"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FAFAFB",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": 0,
+                                  "output": "#FF4747"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "property"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#004B3A78"
+                      },
+                      "textStyle": {
+                        "fontFamily": "inherit",
+                        "fontSize": 20,
+                        "fontWeight": "normal",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_3"
+                },
+                "position": {
+                  "basis": "1321.4px",
+                  "grow": 1
+                },
+                "props": {
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "27px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "28px"
+                    },
+                    "props": {
+                      "text": " PRODUCTION STATS",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "FlexContainer"
+                        },
+                        "position": {
+                          "basis": "0.7px"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "144px"
+                                },
+                                "props": {
+                                  "text": "Total logs",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "96px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "polling": {
+                                          "enabled": true,
+                                          "rate": "1"
+                                        },
+                                        "queryPath": "previousdaydata/totalblock",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks_0"
+                            },
+                            "position": {
+                              "basis": "47px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "143px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "117px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "path": ".../total_blocks_0/Label_0.props.text"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "numberFormat({value} / dateDiff(toDate({......./FlexContainer/DateFrom.props.value}), toDate({......./FlexContainer/DateTo.props.value}), \"hour\") , \"#0.0\") + \" logs/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "property"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "26px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "102px"
+                                },
+                                "props": {
+                                  "text": "OEE",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "39px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "113px"
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": "{this.props.text}"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 100,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": " ((1 - ({..../right/downtime/Label_0.props.text}/60)/dateDiff(toDate({......./FlexContainer/DateFrom.props.value}), toDate({......./FlexContainer/DateTo.props.value}), \"hour\"))*100) * ({.../total_blocks_0/Label_0.props.text} / dateDiff(toDate({......./FlexContainer/DateFrom.props.value}), toDate({......./FlexContainer/DateTo.props.value}), \"hour\") / 300 *100) /100 "
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "#.#",
+                                          "type": "format"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {}
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "Previous_OEE"
+                            },
+                            "position": {
+                              "basis": "47px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "260px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "150px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "polling": {
+                                          "enabled": true,
+                                          "rate": "30"
+                                        },
+                                        "queryPath": "previousdaydata/downtime_event",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "149px"
+                                },
+                                "props": {
+                                  "text": "Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "93px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "polling": {
+                                          "enabled": true,
+                                          "rate": "30"
+                                        },
+                                        "queryPath": "previousdaydata/downtime_sum",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "numberFormat({value}, \"#0.0\")+ \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "24px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "148.2px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 16
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "3px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "expression": " (1 - ({.../downtime/Label_0.props.text}/60)/dateDiff(toDate({......./FlexContainer/DateFrom.props.value}), toDate({......./FlexContainer/DateTo.props.value}), \"hour\"))*100"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "#.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \u0027 %\u0027",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "expr"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "242px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "168px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Left"
+                },
+                "position": {
+                  "basis": "450px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "23px"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#004B3A",
+                            "fontSize": 16
+                          },
+                          "text": " DISTRIBUTION",
+                          "textStyle": {
+                            "textAlign": "center"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "PieChart"
+                        },
+                        "position": {
+                          "basis": "210px"
+                        },
+                        "propConfig": {
+                          "props.data[0].count": {
+                            "binding": {
+                              "config": {
+                                "expression": "{.../FlexContainer_0/bin A/bin A/Label_1.props.text} / {..../Left/FlexContainer/left/total_blocks_0/Label_0.props.text} * 100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.data[1].count": {
+                            "binding": {
+                              "config": {
+                                "expression": "{.../FlexContainer_0/bin B/FlexContainer_0/Label_1.props.text} / {..../Left/FlexContainer/left/total_blocks_0/Label_0.props.text} * 100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.data[2].count": {
+                            "binding": {
+                              "config": {
+                                "expression": "{.../FlexContainer_0/bin D/FlexContainer_0/Label_1.props.text} / {..../Left/FlexContainer/left/total_blocks_0/Label_0.props.text} * 100"
+                              },
+                              "type": "expr"
+                            }
+                          },
+                          "props.data[3].count": {
+                            "binding": {
+                              "config": {
+                                "expression": "{.../FlexContainer_0/bin E/FlexContainer_0/Label_1.props.text} / {..../Left/FlexContainer/left/total_blocks_0/Label_0.props.text} * 100"
+                              },
+                              "type": "expr"
+                            }
+                          }
+                        },
+                        "props": {
+                          "colors": [
+                            "#3366CC",
+                            "#EC4B3D",
+                            "#4FC86C",
+                            "#00A9C6",
+                            "#E69300"
+                          ],
+                          "cutoutRadius": "",
+                          "data": [
+                            {
+                              "flavor": "Bin A"
+                            },
+                            {
+                              "flavor": "Bin B"
+                            },
+                            {
+                              "flavor": "Bin D"
+                            },
+                            {
+                              "flavor": "Bin E"
+                            }
+                          ],
+                          "labels": {
+                            "color": "#FFFFFF",
+                            "inside": {
+                              "radius": 1
+                            }
+                          },
+                          "legend": {
+                            "data": {
+                              "key": "value"
+                            },
+                            "fontSize": 15,
+                            "icon": {
+                              "height": 10,
+                              "width": 10
+                            },
+                            "key": "value"
+                          },
+                          "legendLabelColor": "#FFFFFF",
+                          "sectionOutline": {
+                            "color": "#FFFFFF"
+                          },
+                          "selection": {
+                            "enabled": true
+                          },
+                          "showLegend": false,
+                          "threeDimensional": true,
+                          "title": "\n"
+                        },
+                        "type": "ia.chart.pie"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "238px",
+                      "grow": 1
+                    },
+                    "props": {
+                      "direction": "column"
+                    },
+                    "type": "ia.container.flex"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "23px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "backgroundColor": "#3366CC"
+                                  },
+                                  "textStyle": {
+                                    "backgroundColor": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "34.8px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 13,
+                                    "textAlign": "right"
+                                  },
+                                  "text": "Bin A",
+                                  "textStyle": {
+                                    "textAlign": "left"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_1"
+                                },
+                                "position": {
+                                  "basis": "50.1px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "queryPath": "previousdaydata/binA",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "bin A"
+                            },
+                            "position": {
+                              "basis": "126px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin A"
+                        },
+                        "position": {
+                          "basis": "120px",
+                          "grow": 1
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "23px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "backgroundColor": "#EC4B3D"
+                                  },
+                                  "textStyle": {
+                                    "backgroundColor": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "36px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 13,
+                                    "textAlign": "right"
+                                  },
+                                  "text": "Bin B",
+                                  "textStyle": {
+                                    "textAlign": "left"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_1"
+                                },
+                                "position": {
+                                  "basis": "50.1px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "queryPath": "previousdaydata/binB",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "126px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin B"
+                        },
+                        "position": {
+                          "basis": "118px",
+                          "grow": 1
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "23px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "backgroundColor": "#4FC86C"
+                                  },
+                                  "textStyle": {
+                                    "backgroundColor": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "40px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 13,
+                                    "textAlign": "right"
+                                  },
+                                  "text": "Bin D",
+                                  "textStyle": {
+                                    "textAlign": "left"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_1"
+                                },
+                                "position": {
+                                  "basis": "50.1px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "queryPath": "previousdaydata/binD",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "126px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin D"
+                        },
+                        "position": {
+                          "basis": "119px",
+                          "grow": 1
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "23px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "backgroundColor": "#00A9C6"
+                                  },
+                                  "textStyle": {
+                                    "backgroundColor": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "37px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 13,
+                                    "textAlign": "right"
+                                  },
+                                  "text": "Bin E",
+                                  "textStyle": {
+                                    "textAlign": "left"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_1"
+                                },
+                                "position": {
+                                  "basis": "43px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "parameters": {
+                                          "date_from": "{......./FlexContainer/DateFrom.props.value}",
+                                          "date_to": "{......./FlexContainer/DateTo.props.value}"
+                                        },
+                                        "queryPath": "previousdaydata/binE",
+                                        "returnFormat": "scalar"
+                                      },
+                                      "type": "query"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "FlexContainer_0"
+                            },
+                            "position": {
+                              "basis": "114px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "bin E"
+                        },
+                        "position": {
+                          "basis": "114px"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0"
+                    },
+                    "position": {
+                      "basis": "25px",
+                      "grow": 1
+                    },
+                    "props": {
+                      "style": {
+                        "borderStyle": "outset",
+                        "borderWidth": 0.1
+                      }
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Middle"
+                },
+                "position": {
+                  "basis": "487px",
+                  "grow": 1
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "313px"
+            },
+            "propConfig": {
+              "meta.visible": {
+                "binding": {
+                  "config": {
+                    "path": "./Left/FlexContainer/left/total_blocks_0/Label_0.props.text"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": true,
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": 0,
+                          "output": false
+                        }
+                      ],
+                      "outputType": "scalar",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "justify": "space-around"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "today_shift"
+        },
+        "position": {
+          "basis": "646px"
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-around",
+          "style": {
+            "borderStyle": "outset",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

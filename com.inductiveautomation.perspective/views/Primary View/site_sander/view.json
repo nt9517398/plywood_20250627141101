@@ -1,0 +1,826 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1065,
+      "width": 1690
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "265px"
+            },
+            "props": {
+              "text": "PLY2 SANDER",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "20px",
+              "grow": 1
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "51px",
+          "shrink": 0
+        },
+        "props": {
+          "alignItems": "baseline"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "settime(addDays(now(0), -0),06,00,00)",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "settime(addDays(now(0), -0),06,00,00)"
+                        }
+                      ],
+                      "outputType": "expression",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "May 12, 2025 6:00 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "22px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 30,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "position": {
+              "shrink": 2
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "now(if({value},1000,0))",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "May 12, 2025 3:09 PM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "34px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "live": true
+            },
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.custom.live \u003d not self.custom.live"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "propConfig": {
+              "props.style.classes": {
+                "binding": {
+                  "config": {
+                    "path": "this.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "LIVE"
+                        }
+                      ],
+                      "outputType": "style-list",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#808080"
+              },
+              "text": "LIVE",
+              "textStyle": {
+                "color": "#FFFFFF"
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 1
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "41px"
+        },
+        "props": {
+          "alignItems": "flex-start",
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "50px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  },
+                  "text": "INKJET SIGNAL",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "component": {
+                    "onEditCellCommit": {
+                      "config": {
+                        "script": "self.props.data \u003d system.dataset.setValue(self.props.data, event.row , event.column,valueToSet)\nupdate \u003d \"UPDATE site_press SET pack_count \u003d ? WHERE t_stamp \u003d ? and recipe_name\u003d?\"\nsystem.db.runPrepUpdate(update, args)"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Table"
+                },
+                "position": {
+                  "basis": "542.8px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.data": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_2/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_2/DateTo.props.value}"
+                        },
+                        "queryPath": "inkjet_sander_signal/inkjet_signal",
+                        "returnFormat": "dataset"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "columns": [
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                      "editable": false,
+                      "field": "t_stamp",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "right",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "center",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": "",
+                        "fontSize": 20
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY",
+                      "editable": false,
+                      "field": "OutPanel_Info_RollConv2_5_",
+                      "filter": {
+                        "boolean": {
+                          "condition": ""
+                        },
+                        "date": {
+                          "condition": "",
+                          "value": ""
+                        },
+                        "enabled": false,
+                        "number": {
+                          "condition": "",
+                          "value": ""
+                        },
+                        "string": {
+                          "condition": "",
+                          "value": ""
+                        },
+                        "visible": "on-hover"
+                      },
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "auto",
+                      "nullFormat": {
+                        "includeNullStrings": false,
+                        "nullFormatValue": "",
+                        "strict": false
+                      },
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": "",
+                        "fontSize": 20
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY HH:mm:ss",
+                      "editable": false,
+                      "field": "thickness",
+                      "footer": {
+                        "align": "center",
+                        "justify": "center",
+                        "style": {
+                          "classes": "",
+                          "fontSize": 20
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "bottom",
+                        "justify": "center",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "left",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY",
+                      "editable": false,
+                      "field": "product",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "auto",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": ""
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    }
+                  ],
+                  "enableHeader": false,
+                  "enableHeaderGroups": true,
+                  "headerGroupStyle": {
+                    "backgroundColor": "#004B3A"
+                  },
+                  "headerGroups": [
+                    [
+                      {
+                        "align": "center",
+                        "justify": "center",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "UNLOAD TIME STAMP\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "Inkjet signal"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "Thickness\n\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "product"
+                      }
+                    ]
+                  ],
+                  "rows": {
+                    "highlight": {
+                      "color": "#00AC3A"
+                    },
+                    "striped": {
+                      "color": {
+                        "even": "#2B2B2B",
+                        "odd": "#004B3A71"
+                      }
+                    }
+                  },
+                  "selection": {
+                    "enableRowSelection": false,
+                    "style": {
+                      "backgroundColor": "00683A"
+                    }
+                  }
+                },
+                "type": "ia.display.table"
+              }
+            ],
+            "meta": {
+              "name": "INKJET"
+            },
+            "position": {
+              "basis": "1361px",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "borderStyle": "outset",
+                "borderWidth": 0.1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "50px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  },
+                  "text": "CURRENT SIGNAL",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "custom": {
+                  "previous_value": 1
+                },
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "178px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.style.backgroundColor": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_sander/inkjet_signal/I_PC_Stkr1_TippleUpContorl"
+                      },
+                      "transforms": [
+                        {
+                          "fallback": "#000000",
+                          "inputType": "scalar",
+                          "mappings": [
+                            {
+                              "input": true,
+                              "output": "#008000"
+                            }
+                          ],
+                          "outputType": "color",
+                          "type": "map"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  },
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_sander/inkjet_signal/OutPanel_Info_RollConv2/OutPanel_Info_RollConv2_5_"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "fontSize": 80,
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontSize": 200,
+                    "fontWeight": "900"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_1"
+            },
+            "position": {
+              "basis": "329px",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "888px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

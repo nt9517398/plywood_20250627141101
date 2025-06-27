@@ -1,0 +1,802 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1500,
+      "width": 2300
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "TRIM LINE",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Press_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": false,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": true
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_press/MIS_Press_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": true,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": false
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Icon",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FF0000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": false,
+                                  "output": "#808080"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/warning",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "125px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status",
+              "visible": false
+            },
+            "position": {
+              "basis": "252px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "spacing2"
+            },
+            "position": {
+              "basis": "-111px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label_0",
+              "visible": false
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "LAY UP",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing_0"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_trimline/Program:MIS/MIS_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": false,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": true
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]formply_trimline/Program:MIS/MIS_Production_On"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": true,
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": true,
+                                  "output": false
+                                }
+                              ],
+                              "outputType": "scalar",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Icon",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "30px"
+                    },
+                    "propConfig": {
+                      "props.color": {
+                        "binding": {
+                          "config": {
+                            "fallbackDelay": 2.5,
+                            "mode": "direct",
+                            "tagPath": "[default]site_composer2/Alarms/HMI_AlarmActive"
+                          },
+                          "transforms": [
+                            {
+                              "fallback": "#FF0000",
+                              "inputType": "scalar",
+                              "mappings": [
+                                {
+                                  "input": false,
+                                  "output": "#808080"
+                                }
+                              ],
+                              "outputType": "color",
+                              "type": "map"
+                            }
+                          ],
+                          "type": "tag"
+                        }
+                      }
+                    },
+                    "props": {
+                      "path": "material/warning",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "type": "ia.display.icon"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer"
+                },
+                "position": {
+                  "basis": "180px"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "status_0"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "position": {
+              "height": 0.0426,
+              "width": 0.1308,
+              "x": 0.0425,
+              "y": 0.0529
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "settime(addDays(now(0), -1),0,0,0)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Jun 13,2023 12:00:00 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "position": {
+              "height": 0.0426,
+              "width": 0.1308,
+              "x": 0.1995,
+              "y": 0.0526
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "settime(addDays(now(0), -1),23,59,59)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Jun 13,2023 11:59:59 pm",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 0.0426,
+              "width": 0.2023,
+              "x": 0.0711
+            },
+            "props": {
+              "text": "PRODUCTION REPORT",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 25,
+                "fontStyle": "italic",
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textDecoration": "underline",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "ReportViewer"
+            },
+            "position": {
+              "height": 0.8,
+              "width": 0.9,
+              "x": 0.0443,
+              "y": 0.1099
+            },
+            "propConfig": {
+              "props.params.EndDate": {
+                "binding": {
+                  "config": {
+                    "expression": "if({../DateTo.props.value}\u003dNone, toMillis(dateArithmetic(now(0), -24, \u0027hour\u0027)), toMillis({../DateTo.props.value}))"
+                  },
+                  "type": "expr"
+                }
+              },
+              "props.params.StartDate": {
+                "binding": {
+                  "config": {
+                    "expression": "if({../DateFrom.props.value}\u003dNone, toMillis(dateArithmetic(now(0), -24, \u0027hour\u0027)), toMillis({../DateFrom.props.value}))"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "page": 1,
+              "pageCount": 52,
+              "source": "formply_trimline_productionreport"
+            },
+            "type": "ia.reporting.report-viewer"
+          }
+        ],
+        "meta": {
+          "name": "CoordinateContainer"
+        },
+        "position": {
+          "basis": "1452px"
+        },
+        "props": {
+          "mode": "percent"
+        },
+        "type": "ia.container.coord"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,1174 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1320,
+      "width": 1710
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "971px"
+            },
+            "props": {
+              "text": "PLY2 PRESS CHARTS",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "54px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "addDays(now(0),-1)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Aug 14,2024 07:51:17 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "50px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "NOW(0)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Aug 15,2024 07:51:17 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "18px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "40px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": ""
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart"
+        },
+        "position": {
+          "basis": "359px"
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_press/HMI_Diag_PanelPressure1"
+                  },
+                  {
+                    "path": "[default]site_press/HMI_Diag_PanelPressure2"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[1].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_press/HMI_TemperatureCur"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.2,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 15
+                    },
+                    "offset": 12,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "Pressure",
+                    "visible": true
+                  },
+                  "max": 25,
+                  "min": 0,
+                  "name": "pressure",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 40
+                },
+                {
+                  "alignment": "right",
+                  "grid": {
+                    "color": "#D5D5D5",
+                    "dashArray": 0,
+                    "opacity": 0.2,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 15
+                    },
+                    "offset": -10,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "Temp",
+                    "visible": true
+                  },
+                  "max": 200,
+                  "min": 0,
+                  "name": "temp",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 50
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "pressure",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#D90000",
+                      "key": "HMI_Diag_PanelPressure1",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "color": "#FFFF00",
+                      "key": "HMI_Diag_PanelPressure2",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStep",
+                  "radius": 2,
+                  "series": "pressure",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "temp",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#00FF00",
+                      "key": "HMI_TemperatureCur",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "temp",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "pressure"
+            },
+            {
+              "name": "temp"
+            }
+          ],
+          "style": {
+            "borderStyle": "groove",
+            "borderWidth": 3
+          },
+          "title": {
+            "text": "Presure \u0026 Temp",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart_0"
+        },
+        "position": {
+          "basis": "400px"
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_press/HMI_InfeedRoll_SpeedRef"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[1].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_press/HMI_InfeedLiftPlatform_Offset"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 12
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "Infeed Roller Speed",
+                    "visible": true
+                  },
+                  "max": 120,
+                  "min": 0,
+                  "name": "infeed roller speed",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                },
+                {
+                  "alignment": "right",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 12
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "Infeed Plat Offset",
+                    "visible": true
+                  },
+                  "max": 10,
+                  "min": -10,
+                  "name": "infeed plat offset",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 30
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "infeed roller speed",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FF0000",
+                      "key": "HMI_InfeedRoll_SpeedRef",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveLinear",
+                  "radius": 2,
+                  "series": "infeed roller speed",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "infeed plat offset",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FFFF00",
+                      "key": "HMI_InfeedLiftPlatform_Offset",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStepAfter",
+                  "radius": 2,
+                  "series": "infeed platform offset",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "infeed roller speed"
+            },
+            {
+              "name": "infeed platform offset"
+            }
+          ],
+          "style": {
+            "borderBottomStyle": "groove",
+            "borderBottomWidth": 3,
+            "borderLeftStyle": "groove",
+            "borderLeftWidth": 3,
+            "borderRightStyle": "groove",
+            "borderRightWidth": 3,
+            "borderTopStyle": "",
+            "borderTopWidth": 1
+          },
+          "title": {
+            "text": "Infeed Roller Speed \u0026 Platform Offset",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart_1"
+        },
+        "position": {
+          "basis": "400px"
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[site_press/http://10.30.193.4:8088/:default]site_press/hmi_diag_cylinder1_pressure"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[1].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "250",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[site_press/http://10.30.193.4:8088/:default]site_press/hmi_diag_cylinder2_pressure"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "defaultStyles": {
+            "colorScheme": "Blues"
+          },
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "",
+                      "size": 10
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "",
+                    "visible": true
+                  },
+                  "max": 300,
+                  "min": 0,
+                  "name": "pressure",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "pressure",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#E42020",
+                      "key": "hmi_diag_cylinder1_pressure",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStep",
+                  "radius": 2,
+                  "series": "HMI_Diag_Cylinder1_Pressure",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "pressure",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FFFB02",
+                      "key": "hmi_diag_cylinder2_pressure",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStep",
+                  "radius": 2,
+                  "series": "HMI_Diag_Cylinder2_Pressure",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "HMI_Diag_Cylinder1_Pressure"
+            },
+            {
+              "name": "HMI_Diag_Cylinder2_Pressure"
+            }
+          ],
+          "style": {
+            "borderBottomStyle": "groove",
+            "borderBottomWidth": 3,
+            "borderLeftStyle": "groove",
+            "borderLeftWidth": 3,
+            "borderRightStyle": "groove",
+            "borderRightWidth": 3,
+            "borderTopStyle": "",
+            "borderTopWidth": 1
+          },
+          "title": {
+            "text": "HMI_Diag_Cylinder1_Pressured  \u0026 HMI_Diag_Cylinder2_Pressure",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

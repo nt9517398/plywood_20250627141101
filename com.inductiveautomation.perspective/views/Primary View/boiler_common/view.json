@@ -1,0 +1,864 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1320,
+      "width": 1710
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "971px"
+            },
+            "props": {
+              "text": "BOILER COMMON",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "START",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "54px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "settime(addDays(now(0), -0),06,00,00)",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "settime(addDays(now(0), -0),06,00,00)"
+                        }
+                      ],
+                      "outputType": "expression",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "May 28,2024 06:00:00 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "50px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "now(if({value},3000,0))",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "May 28,2024 09:15:29 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "18px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "live": true
+            },
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.custom.live \u003d not self.custom.live"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "propConfig": {
+              "props.style.classes": {
+                "binding": {
+                  "config": {
+                    "path": "this.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "LIVE"
+                        }
+                      ],
+                      "outputType": "style-list",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#808080"
+              },
+              "text": "LIVE",
+              "textStyle": {
+                "color": "#FFFFFF"
+              }
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "40px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": ""
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart_1"
+        },
+        "position": {
+          "basis": "400px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "LastValue",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "300",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]Boiler Common/TC4570506_PID_PV"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[1].data": {
+            "binding": {
+              "config": {
+                "aggregate": "LastValue",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "300",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]Boiler Common/TC4570506_PID_OUT"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[2].data": {
+            "binding": {
+              "config": {
+                "aggregate": "Average",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "300",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]Boiler Common/TC4570506_PID_SP"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "defaultStyles": {
+            "normal": {
+              "stroke": {
+                "width": 2
+              }
+            }
+          },
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "right",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.3,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": true
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 17
+                    },
+                    "offset": 6,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "TC4570506_PID",
+                    "visible": true
+                  },
+                  "max": 120,
+                  "min": 0,
+                  "name": "TEMP",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 17
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                },
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 17
+                    },
+                    "offset": -5,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "TC4570506_OP",
+                    "visible": true
+                  },
+                  "max": 100,
+                  "min": 0,
+                  "name": "PERCENT",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 17
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "TEMP",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#24FE00",
+                      "key": "TC4570506_PID_PV",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "TC4570506_PID_PV",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "PERCENT",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#0000FF",
+                      "key": "TC4570506_PID_OUT",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStep",
+                  "radius": 2,
+                  "series": "TC4570506_PID_OUT",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "TEMP",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FF8C00",
+                      "key": "TC4570506_PID_SP",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStep",
+                  "radius": 2,
+                  "series": "TC4570506_PID_SP",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "TC4570506_PID_PV"
+            },
+            {
+              "name": "TC4570506_PID_OUT"
+            },
+            {
+              "name": "TC4570506_PID_SP"
+            }
+          ],
+          "style": {
+            "borderStyle": "solid",
+            "borderWidth": 0
+          },
+          "title": {
+            "text": "HOTWELL FEEDWATER TEMPERATURE",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart_2"
+        },
+        "position": {
+          "basis": "400px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "LastValue",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "300",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]Boiler Common/LT4570_0509"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "defaultStyles": {
+            "normal": {
+              "stroke": {
+                "width": 2
+              }
+            }
+          },
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.4,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": true
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFFFF",
+                      "size": 20
+                    },
+                    "offset": -5,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "LT4570_0509",
+                    "visible": true
+                  },
+                  "max": 100,
+                  "min": 0,
+                  "name": "LEVEL",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "",
+                        "size": 17
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "LEVEL",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#24FE00",
+                      "key": "LT4570_0509",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "LT4570_0509",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "LT4570_0509"
+            }
+          ],
+          "title": {
+            "text": "LT4570_0509 HOTWELL TANK LEVEL",
+            "visible": true
+          }
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

@@ -1,0 +1,1044 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1320,
+      "width": 1710
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "154px"
+            },
+            "props": {
+              "text": "DRYER ",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "54px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "settime(addDays(now(0), -0),06,00,00)",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "settime(addDays(now(0), -0),06,00,00)"
+                        }
+                      ],
+                      "outputType": "expression",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Mar 19,2025 06:00:00 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "50px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "path": "../Button_0.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "now(if({value},3000,0))",
+                      "type": "expression"
+                    },
+                    {
+                      "expression": "addSeconds({value},-5)",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "format": "MMM D,YYYY hh:mm:ss a",
+              "formattedValue": "Mar 19,2025 07:39:15 am",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "basis": "18px"
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 50,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "custom": {
+              "live": true
+            },
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tself.custom.live \u003d not self.custom.live"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "basis": "80px"
+            },
+            "propConfig": {
+              "props.style.classes": {
+                "binding": {
+                  "config": {
+                    "path": "this.custom.live"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "",
+                      "inputType": "scalar",
+                      "mappings": [
+                        {
+                          "input": true,
+                          "output": "LIVE"
+                        }
+                      ],
+                      "outputType": "style-list",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#808080"
+              },
+              "text": "LIVE",
+              "textStyle": {
+                "color": "#FFFFFF"
+              }
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "40px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": ""
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart"
+        },
+        "position": {
+          "basis": "455.8px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.series[0].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "200",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_dryer/_MoistureAverage_OverSampleSheets"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[1].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "200",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_dryer/_RedryPercentage_RedryPercentage"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[2].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "200",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_dryer/HMI_Dryer_AutoSpeed_AvgTempAct"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[3].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "200",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_dryer/HMI_Dryer_AvgSpeedAct"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          },
+          "props.series[4].data": {
+            "binding": {
+              "config": {
+                "aggregate": "MinMax",
+                "avoidScanClassValidation": true,
+                "dateRange": {
+                  "endDate": "{../FlexContainer_1/DateTo.props.value}",
+                  "startDate": "{../FlexContainer_1/DateFrom.props.value}"
+                },
+                "enableValueCache": true,
+                "ignoreBadQuality": false,
+                "preventInterpolation": false,
+                "returnFormat": "Wide",
+                "returnSize": {
+                  "numRows": "200",
+                  "type": "FIXED"
+                },
+                "tags": [
+                  {
+                    "path": "[default]site_dryer/HMI_Dryer_SpeedCtrl_AutoOn"
+                  }
+                ],
+                "valueFormat": "DATASET"
+              },
+              "type": "tag-history"
+            }
+          }
+        },
+        "props": {
+          "defaultStyles": {
+            "highlighted": {
+              "fill": {
+                "opacity": 3
+              },
+              "stroke": {
+                "opacity": 3
+              }
+            },
+            "normal": {
+              "fill": {
+                "opacity": 2
+              },
+              "stroke": {
+                "opacity": 2,
+                "width": 1.5
+              }
+            },
+            "selected": {
+              "fill": {
+                "opacity": 3
+              },
+              "stroke": {
+                "opacity": 3
+              }
+            }
+          },
+          "enablePanZoom": false,
+          "legend": {
+            "visible": true
+          },
+          "plots": [
+            {
+              "axes": [
+                {
+                  "alignment": "right",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.2,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": true
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FF47FF",
+                      "size": 10
+                    },
+                    "offset": -10,
+                    "style": {
+                      "classes": "",
+                      "color": "#00FFFF",
+                      "fontSize": 25
+                    },
+                    "text": "AVG MOISTURE\n",
+                    "visible": true
+                  },
+                  "max": 10,
+                  "min": 0,
+                  "name": "moisture",
+                  "style": {
+                    "classes": "",
+                    "color": "#FF47FF"
+                  },
+                  "tick": {
+                    "color": "#FFFFFF",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "#FF00FF",
+                        "size": 18
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 50
+                },
+                {
+                  "alignment": "right",
+                  "grid": {
+                    "color": "#47FFFF",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#47FFFF",
+                      "size": 24
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "RE DRY PERCENT",
+                    "visible": true
+                  },
+                  "max": 25,
+                  "min": 0,
+                  "name": "re_dry",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "#47FFFF",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "#47FFFF",
+                        "size": 18
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                },
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "#FFFF47",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#FFFF47",
+                      "size": 24
+                    },
+                    "offset": -8,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "AVG TEMP",
+                    "visible": true
+                  },
+                  "max": 200,
+                  "min": 0,
+                  "name": "temp",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "#FFFF47",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "#FFFF47",
+                        "size": 18
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                },
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "#00D900",
+                      "size": 24
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "DRYER SPEED",
+                    "visible": true
+                  },
+                  "max": 10,
+                  "min": 0,
+                  "name": "speed",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "#00D900",
+                        "size": 20
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 60
+                },
+                {
+                  "alignment": "left",
+                  "grid": {
+                    "color": "",
+                    "dashArray": 0,
+                    "opacity": 0.9,
+                    "style": {
+                      "classes": ""
+                    },
+                    "visible": false
+                  },
+                  "label": {
+                    "font": {
+                      "color": "",
+                      "size": 10
+                    },
+                    "offset": 0,
+                    "style": {
+                      "classes": ""
+                    },
+                    "text": "",
+                    "visible": true
+                  },
+                  "max": 10,
+                  "min": 0,
+                  "name": "auto",
+                  "style": {
+                    "classes": ""
+                  },
+                  "tick": {
+                    "color": "",
+                    "count": "Auto",
+                    "label": {
+                      "font": {
+                        "color": "#000000",
+                        "size": 10
+                      },
+                      "format": "Auto",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "width": 1
+                }
+              ],
+              "markers": [],
+              "relativeWeight": 1,
+              "trends": [
+                {
+                  "axis": "moisture",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FF47FF",
+                      "key": "_MoistureAverage_OverSampleSheets",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "moisture",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "re_dry",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#47FFFF",
+                      "key": "_RedryPercentage_RedryPercentage",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "re_dry",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "temp",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FFFF47",
+                      "key": "HMI_Dryer_AutoSpeed_AvgTempAct",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveBasis",
+                  "radius": 2,
+                  "series": "temp",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "speed",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#00D900",
+                      "key": "HMI_Dryer_AvgSpeedAct",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveMonotoneY",
+                  "radius": 2,
+                  "series": "speed",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                },
+                {
+                  "axis": "auto",
+                  "baselines": [],
+                  "breakLine": true,
+                  "columns": [
+                    {
+                      "color": "#FF0000",
+                      "key": "HMI_Dryer_SpeedCtrl_AutoOn",
+                      "styles": {
+                        "highlighted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "muted": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "normal": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        },
+                        "selected": {
+                          "fill": {
+                            "color": "",
+                            "opacity": null
+                          },
+                          "stroke": {
+                            "color": "",
+                            "dashArray": null,
+                            "opacity": null,
+                            "width": null
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "interpolation": "curveStepBefore",
+                  "radius": 2,
+                  "series": "auto",
+                  "stack": true,
+                  "type": "line",
+                  "visible": true
+                }
+              ]
+            }
+          ],
+          "series": [
+            {
+              "name": "moisture"
+            },
+            {
+              "name": "re_dry"
+            },
+            {
+              "name": "temp"
+            },
+            {
+              "name": "speed"
+            },
+            {
+              "name": "auto"
+            }
+          ],
+          "title": {
+            "text": "DRYER SPEED CHART",
+            "visible": true
+          },
+          "xTrace": {
+            "visible": false
+          }
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

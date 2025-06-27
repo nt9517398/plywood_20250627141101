@@ -1,0 +1,4385 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1065,
+      "width": 1690
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "252px"
+            },
+            "props": {
+              "text": "COMPOSER 2\n",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "669px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS:",
+                  "textStyle": {
+                    "fontSize": 25
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "height": 12,
+                      "width": 23,
+                      "x": -1.09,
+                      "y": 26.822336963
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "height": 12,
+                      "width": 23,
+                      "x": -1.09,
+                      "y": 26.822336963
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Yellow pilot light 2",
+                      "visible": false
+                    },
+                    "position": {
+                      "height": 40,
+                      "width": 60,
+                      "x": 4.236680469,
+                      "y": 9.888396701
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#fc0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                          "fill": {
+                            "paint": "#ffe06b"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#ffeda3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#fffad9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "height": 32,
+                      "width": 42.00000000000001,
+                      "x": 36.04,
+                      "y": 19.14
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "classes": "RedFlashing"
+                      },
+                      "text": "STOP"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_0"
+                    },
+                    "position": {
+                      "height": 32,
+                      "width": 46.00000000000001,
+                      "x": 36.04,
+                      "y": 19.14
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "classes": "GreenFlashing",
+                        "textAlign": "center"
+                      },
+                      "text": "LIVE"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "CoordinateContainer"
+                },
+                "position": {
+                  "basis": "200px"
+                },
+                "type": "ia.container.coord"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "18px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": "SHEET ID",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": "LENGTH (mm)",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "text": "WIDTH(mm)",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": "THICKNESS",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": "GRADE",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid",
+                "borderWidth": 0.5
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/current/TotalFullSheets"
+                      },
+                      "transforms": [
+                        {
+                          "formatType": "numeric",
+                          "formatValue": "#,###,###",
+                          "type": "format"
+                        }
+                      ],
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": 2400,
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": 1200,
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_composer2/current/input_thickness"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "expression": "if({[default]site_composer2/current/I_C_GradeProduct},\"U2\", \r\nif({[default]site_composer2/current/I_D_GradeProduct},\"U3\",\"Unknown\"))"
+                      },
+                      "type": "expr"
+                    }
+                  }
+                },
+                "props": {
+                  "textStyle": {
+                    "fontSize": 20,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "118px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "70px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "borderStyle": "double",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "1690px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#004B3A78"
+                      },
+                      "text": "CURRENT DATA",
+                      "textStyle": {
+                        "fontSize": 15,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "1685px",
+                  "grow": 2
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "borderStyle": "none",
+                    "borderWidth": 0.1
+                  },
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "33px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "props": {
+                      "text": " PRODUCTION STATS\n",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "107px"
+                                },
+                                "props": {
+                                  "text": "Line status",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label_1"
+                                    },
+                                    "position": {
+                                      "basis": "15px"
+                                    },
+                                    "propConfig": {
+                                      "meta.visible": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                                          },
+                                          "type": "expr"
+                                        }
+                                      },
+                                      "props.style.color": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "fallback": null,
+                                              "inputType": "range",
+                                              "mappings": [
+                                                {
+                                                  "input": {
+                                                    "exclusiveMin": true,
+                                                    "max": 0
+                                                  },
+                                                  "output": 0
+                                                },
+                                                {
+                                                  "input": {
+                                                    "exclusiveMax": true,
+                                                    "min": 1
+                                                  },
+                                                  "output": 1
+                                                }
+                                              ],
+                                              "outputType": "scalar",
+                                              "type": "map"
+                                            },
+                                            {
+                                              "fallback": "#000000",
+                                              "inputType": "scalar",
+                                              "mappings": [
+                                                {
+                                                  "input": 1,
+                                                  "output": "#D90000"
+                                                },
+                                                {
+                                                  "input": 0,
+                                                  "output": "#00D900"
+                                                }
+                                              ],
+                                              "outputType": "color",
+                                              "type": "map"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      },
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "\u0027Down for \u0027 +{value} + \u0027 min\u0027",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "fontSize": 16,
+                                        "textAlign": "center"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_2"
+                                    },
+                                    "position": {
+                                      "basis": "15px"
+                                    },
+                                    "propConfig": {
+                                      "meta.visible": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                                          },
+                                          "type": "expr"
+                                        }
+                                      },
+                                      "props.style.color": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "fallback": null,
+                                              "inputType": "range",
+                                              "mappings": [
+                                                {
+                                                  "input": {
+                                                    "exclusiveMin": true,
+                                                    "max": 0
+                                                  },
+                                                  "output": 0
+                                                },
+                                                {
+                                                  "input": {
+                                                    "exclusiveMax": true,
+                                                    "min": 1
+                                                  },
+                                                  "output": 1
+                                                }
+                                              ],
+                                              "outputType": "scalar",
+                                              "type": "map"
+                                            },
+                                            {
+                                              "fallback": "#000000",
+                                              "inputType": "scalar",
+                                              "mappings": [
+                                                {
+                                                  "input": 1,
+                                                  "output": "#D90000"
+                                                },
+                                                {
+                                                  "input": 0,
+                                                  "output": "#00D900"
+                                                }
+                                              ],
+                                              "outputType": "color",
+                                              "type": "map"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "text": "Running",
+                                      "textStyle": {
+                                        "fontSize": 16,
+                                        "textAlign": "center"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "207px"
+                                },
+                                "props": {
+                                  "direction": "column",
+                                  "justify": "center"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "line_status"
+                            },
+                            "position": {
+                              "basis": "39px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "167px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 15
+                                  },
+                                  "text": "Lineal Meters\n Produced",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "13px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "71px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/LinealMeterGoodVeneer"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "#.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "89px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "90px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "139px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/LinealMetersPerHour"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "146.1px"
+                                },
+                                "props": {
+                                  "text": "OEE (Live)",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "34px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "92px"
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/TodayComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 60,
+                                                "min": 50
+                                              },
+                                              "output": "RedTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 300,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/TodayComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": ""
+                                  },
+                                  "textStyle": {
+                                    "textAlign": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "CURRENT_OEE"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "132px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/DowntimeEvents"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "190px"
+                                },
+                                "props": {
+                                  "text": "Current Shift Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "13px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/CurrentShiftDowntime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "props": {
+                                  "text": "Runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "138px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "95px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/RuntimePercentage"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "169px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 17
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "37px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "113px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/EffectiveRuntimePercentage"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.## ",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-around"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "160px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Left"
+                },
+                "position": {
+                  "basis": "665px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "ReportViewer"
+                    },
+                    "position": {
+                      "basis": "700px"
+                    },
+                    "propConfig": {
+                      "props.params.key": {
+                        "binding": {
+                          "config": {
+                            "parameters": {
+                              "date_from": "\"\"",
+                              "date_to": "\"\""
+                            },
+                            "polling": {
+                              "enabled": true,
+                              "rate": "30"
+                            },
+                            "queryPath": "composer2EachHour"
+                          },
+                          "type": "query"
+                        }
+                      }
+                    },
+                    "props": {
+                      "page": 1,
+                      "pageCount": 1,
+                      "source": "composer2_onehour"
+                    },
+                    "type": "ia.reporting.report-viewer"
+                  }
+                ],
+                "meta": {
+                  "name": "Middle"
+                },
+                "position": {
+                  "basis": "487px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "meta": {
+                          "name": "Label"
+                        },
+                        "position": {
+                          "basis": "28px"
+                        },
+                        "props": {
+                          "style": {
+                            "backgroundColor": "#004B3A",
+                            "fontFamily": "monospace",
+                            "textAlign": "center"
+                          },
+                          "text": " OEE",
+                          "textStyle": {
+                            "fontFamily": "Merriweather",
+                            "fontWeight": "900",
+                            "textOverflow": "clip",
+                            "textTransform": "uppercase"
+                          }
+                        },
+                        "type": "ia.display.label"
+                      },
+                      {
+                        "meta": {
+                          "name": "TimeSeriesChart"
+                        },
+                        "position": {
+                          "basis": "242px"
+                        },
+                        "propConfig": {
+                          "props.series[0].data": {
+                            "binding": {
+                              "config": {
+                                "avoidScanClassValidation": true,
+                                "dateRange": {
+                                  "mostRecent": "1",
+                                  "mostRecentUnits": "DAY"
+                                },
+                                "enableValueCache": true,
+                                "ignoreBadQuality": false,
+                                "polling": {
+                                  "enabled": true,
+                                  "rate": "60"
+                                },
+                                "preventInterpolation": false,
+                                "returnFormat": "Wide",
+                                "returnSize": {
+                                  "type": "RAW"
+                                },
+                                "tags": [
+                                  {
+                                    "path": "[default]site_composer2/current/TodayComposerOEE"
+                                  },
+                                  {
+                                    "path": "[default]site_composer2/current/TodayComposerAvailability"
+                                  },
+                                  {
+                                    "path": "[default]site_composer2/current/TodayComposerPerformance"
+                                  }
+                                ],
+                                "valueFormat": "DATASET"
+                              },
+                              "type": "tag-history"
+                            }
+                          }
+                        },
+                        "props": {
+                          "defaultStyles": {
+                            "colorScheme": "Paired",
+                            "colors": [
+                              "#AC0000",
+                              "#00D900",
+                              "#FFFF00"
+                            ]
+                          },
+                          "legend": {
+                            "visible": true
+                          },
+                          "series": [
+                            {
+                              "name": "Boiler"
+                            }
+                          ],
+                          "timeAxis": {
+                            "height": 25
+                          },
+                          "timeRange": {
+                            "dateFormat": "MMMM Do YYYY",
+                            "timeFormat": "hh:mm"
+                          },
+                          "title": {
+                            "font": {
+                              "size": 10
+                            },
+                            "height": 20,
+                            "text": "OEE \u003d AVAIBILITY X PERFORMANCE",
+                            "visible": true
+                          },
+                          "xTrace": {
+                            "infoBox": {
+                              "fill": {
+                                "opacity": 1.9
+                              }
+                            }
+                          }
+                        },
+                        "type": "ia.chart.timeseries"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer_0",
+                      "visible": false
+                    },
+                    "position": {
+                      "basis": "466px"
+                    },
+                    "props": {
+                      "direction": "column"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Right"
+                },
+                "position": {
+                  "basis": "466px"
+                },
+                "props": {
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "237px"
+            },
+            "props": {
+              "justify": "space-around"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_shift"
+        },
+        "position": {
+          "basis": "270px"
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-around",
+          "style": {
+            "backgroundColor": "#000000",
+            "borderStyle": "outset",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "12px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "1690px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A78",
+                    "classes": "BLUEFLASHING"
+                  },
+                  "text": "PREVIOUS DAY DATA",
+                  "textStyle": {
+                    "fontFamily": "inherit",
+                    "fontSize": 15,
+                    "fontWeight": "normal",
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "24px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A"
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "28px"
+                    },
+                    "props": {
+                      "text": "MORNING SHIFT PRODUCTION STATS",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "134px"
+                                },
+                                "props": {
+                                  "text": "Total Full Sheets",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "48px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "52px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/TotalFullSheets"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "179px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 15
+                                  },
+                                  "text": "Lineal Meters Produced\n",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "-11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "81px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/LinealMetersProduced"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" m\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks_0"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "144px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "36.1px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "87.5px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/RunRate"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "textStyle": {
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "139px"
+                                },
+                                "props": {
+                                  "text": "OEE",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "39px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "43px"
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/MorningShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 60,
+                                                "min": 50
+                                              },
+                                              "output": "RedTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 100,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/MorningShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {}
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "Previous_OEE"
+                            },
+                            "position": {
+                              "basis": "25px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "132px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "53px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/DowntimeEvents"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "82px"
+                                },
+                                "props": {
+                                  "text": "Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "105px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/Downtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "props": {
+                                  "text": "Runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "124px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "83px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/Runtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "168px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 16
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "18px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/EffectiveRuntime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.## ",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-around"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "167px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Left"
+                },
+                "position": {
+                  "basis": "538px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "28px"
+                    },
+                    "props": {
+                      "text": " AFTERNOON SHIFT PRODUCTION STATS",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "134px"
+                                },
+                                "props": {
+                                  "text": "Total Full Sheets",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "48px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "52px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/TotalFullSheets"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "179px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 15
+                                  },
+                                  "text": "Lineal Meters Produced\n",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "-11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "81px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_morningshift/MorningShiftData/LinealMetersProduced"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" m\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks_0"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "144px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "36.1px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "88.6px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/RunRate"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "textStyle": {
+                                    "fontSize": 15
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "139px"
+                                },
+                                "props": {
+                                  "text": "OEE",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "39px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "43px",
+                                  "grow": 1
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/AfternoonShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 60,
+                                                "min": 50
+                                              },
+                                              "output": "RedTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 100,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/AfternoonShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {}
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "Previous_OEE"
+                            },
+                            "position": {
+                              "basis": "25px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "132px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "53px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/DowntimeEvents"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "82px"
+                                },
+                                "props": {
+                                  "text": "Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "105px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/Downtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "props": {
+                                  "text": "Runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "124px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "83px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/Runtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "168px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 16
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "18px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_avoshift/AfternoonShiftData/EffectiveRuntime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.## ",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-around"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "167px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "MIDDLE"
+                },
+                "position": {
+                  "basis": "548px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "28px"
+                    },
+                    "props": {
+                      "text": " NIGHT SHIFT PRODUCTION STATS",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "134px"
+                                },
+                                "props": {
+                                  "text": "Total Full Sheets",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "45px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "52px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/TotalFullSheets"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "177px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 15
+                                  },
+                                  "text": "Lineal Meters Produced\n",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "-11px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "81px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/LinealMetersProduced"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" m\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks_0"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "130.4px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "46px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "87px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/RunRate"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "139px"
+                                },
+                                "props": {
+                                  "text": " OEE",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "39px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "43px"
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/NightShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 60,
+                                                "min": 50
+                                              },
+                                              "output": "RedTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 100,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/NightShiftComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {}
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "Previous_OEE"
+                            },
+                            "position": {
+                              "basis": "25px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "132px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "53px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/DowntimeEvents"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "82px"
+                                },
+                                "props": {
+                                  "text": "Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "105px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/Downtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "props": {
+                                  "text": "Runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "124px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "83px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/Runtime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "168px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 16
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "18px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/_nightshift/NightShiftData/EffectiveRuntime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.## ",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-around"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "167px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "RIGHT"
+                },
+                "position": {
+                  "basis": "538px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "187px"
+            },
+            "props": {
+              "justify": "space-around"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "previous_shift"
+        },
+        "position": {
+          "basis": "230px"
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-around",
+          "style": {
+            "borderStyle": "outset",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "-50px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "fontFamily": "monospace",
+                "textAlign": "center"
+              },
+              "text": "DOWNTIME",
+              "textStyle": {
+                "fontFamily": "Merriweather",
+                "fontWeight": "900",
+                "textOverflow": "clip",
+                "textTransform": "uppercase"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Table"
+            },
+            "position": {
+              "grow": 1
+            },
+            "propConfig": {
+              "props.data": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "downtime_composer2"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "columns": [
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "",
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                },
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "",
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                },
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "",
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                },
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "",
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                },
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "Duration",
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                },
+                {
+                  "align": "center",
+                  "boolean": "checkbox",
+                  "dateFormat": "MM/DD/YYYY",
+                  "editable": false,
+                  "field": "COMMENTS",
+                  "filter": {
+                    "boolean": {
+                      "condition": ""
+                    },
+                    "date": {
+                      "condition": "",
+                      "value": ""
+                    },
+                    "enabled": false,
+                    "number": {
+                      "condition": "",
+                      "value": ""
+                    },
+                    "string": {
+                      "condition": "",
+                      "value": ""
+                    },
+                    "visible": "on-hover"
+                  },
+                  "footer": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "header": {
+                    "align": "center",
+                    "justify": "left",
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": ""
+                  },
+                  "justify": "auto",
+                  "nullFormat": {
+                    "includeNullStrings": false,
+                    "nullFormatValue": "",
+                    "strict": false
+                  },
+                  "number": "value",
+                  "numberFormat": "0,0.##",
+                  "progressBar": {
+                    "bar": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "max": 100,
+                    "min": 0,
+                    "track": {
+                      "color": "",
+                      "style": {
+                        "classes": ""
+                      }
+                    },
+                    "value": {
+                      "enabled": true,
+                      "format": "0,0.##",
+                      "justify": "center",
+                      "style": {
+                        "classes": ""
+                      }
+                    }
+                  },
+                  "render": "auto",
+                  "resizable": true,
+                  "sort": "none",
+                  "sortable": true,
+                  "strictWidth": false,
+                  "style": {
+                    "classes": ""
+                  },
+                  "toggleSwitch": {
+                    "color": {
+                      "selected": "",
+                      "unselected": ""
+                    }
+                  },
+                  "viewParams": {},
+                  "viewPath": "",
+                  "visible": true,
+                  "width": ""
+                }
+              ],
+              "enableHeader": false,
+              "enableHeaderGroups": true,
+              "headerGroupStyle": {
+                "backgroundColor": "#004B3A"
+              },
+              "headerGroups": [
+                [
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "START TIME\n"
+                  },
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "END TIME\n"
+                  },
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "SUB AREA"
+                  },
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "FAULT"
+                  },
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "DURATION"
+                  },
+                  {
+                    "align": "center",
+                    "justify": "left",
+                    "span": 1,
+                    "style": {
+                      "classes": ""
+                    },
+                    "title": "COMMENTS"
+                  }
+                ]
+              ],
+              "rows": {
+                "highlight": {
+                  "color": "#00AC3A"
+                },
+                "striped": {
+                  "color": {
+                    "even": "#2B2B2B",
+                    "odd": "#004B3A71"
+                  }
+                }
+              },
+              "selection": {
+                "enableRowSelection": false,
+                "style": {
+                  "backgroundColor": "00683A"
+                }
+              }
+            },
+            "type": "ia.display.table"
+          }
+        ],
+        "meta": {
+          "name": "downtime"
+        },
+        "position": {
+          "basis": "377px"
+        },
+        "props": {
+          "direction": "column",
+          "style": {
+            "borderStyle": "outset",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

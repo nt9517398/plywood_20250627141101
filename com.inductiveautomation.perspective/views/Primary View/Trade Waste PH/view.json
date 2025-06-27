@@ -1,0 +1,145 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1252,
+      "width": 2252
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "props": {
+          "text": "PH CONTROLLER",
+          "textStyle": {
+            "borderStyle": "none",
+            "color": "#E8E8E8",
+            "fill": "#FFFDFD",
+            "fontFamily": "monospace",
+            "fontSize": 40,
+            "fontWeight": "bolder",
+            "outlineWidth": "10",
+            "textAlign": "start",
+            "textOverflow": "clip",
+            "textTransform": "uppercase",
+            "whiteSpace": "normal",
+            "wordWrap": "break-word"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "rQlTs4YJ",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Pop Up/Popup_tradewaste_discharge_volume",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "PH LEVEL HISTORY CHART"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#15A61C"
+              },
+              "text": "DISCHARGE VOLUME HISTORY TABLE"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "31px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "dlr_V9i6",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Pop Up/Popup_tradewaste_ph_chart",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "DISCHARGE VOLUME HISTORY TABLE"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#15A61C"
+              },
+              "text": "PH LEVEL HISTORY CHART"
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "30px",
+          "grow": 1
+        },
+        "props": {
+          "alignContent": "center",
+          "justify": "flex-end"
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "basis": "1200px",
+          "grow": 1
+        },
+        "props": {
+          "path": "Objects/Overview Vessel"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "justify": "center"
+    },
+    "type": "ia.container.flex"
+  }
+}

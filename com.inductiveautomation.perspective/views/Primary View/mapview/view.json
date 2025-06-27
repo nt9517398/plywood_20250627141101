@@ -1,0 +1,293 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1084
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "custom": {
+          "key": {}
+        },
+        "meta": {
+          "name": "Map"
+        },
+        "position": {
+          "basis": "600px",
+          "grow": 1
+        },
+        "props": {
+          "init": {
+            "center": {
+              "lat": "\n-36.545",
+              "lng": 146.746
+            },
+            "zoom": 16
+          },
+          "layers": {
+            "raster": {
+              "image": [
+                {
+                  "bounds": {
+                    "corner1": {
+                      "lat": null,
+                      "lng": null
+                    },
+                    "corner2": {
+                      "lat": null,
+                      "lng": null
+                    }
+                  },
+                  "options": {
+                    "alt": "",
+                    "crossOrigin": false,
+                    "errorOverlayUrl": "",
+                    "opacity": 1,
+                    "zIndex": 1
+                  },
+                  "source": ""
+                }
+              ],
+              "tile": [
+                {
+                  "WMS": {
+                    "format": "image/jpeg",
+                    "layers": "",
+                    "styles": "",
+                    "transparent": false,
+                    "uppercase": false,
+                    "version": "1.1.1"
+                  },
+                  "options": {
+                    "attribution": "Map data \u0026copy; \u003ca href\u003d\u0027https://www.openstreetmap.org/\u0027\u003eOpenStreetMap\u003c/a\u003e contributors, \u003ca href\u003d\u0027https://creativecommons.org/licenses/by-sa/2.0/\u0027\u003eCC-BY-SA\u003c/a\u003e",
+                    "crossOrigin": false,
+                    "detectRetina": false,
+                    "errorTileUrl": "",
+                    "opacity": 1,
+                    "subdomains": [
+                      "a",
+                      "b",
+                      "c"
+                    ],
+                    "tileSize": {
+                      "height": 256,
+                      "width": 256
+                    },
+                    "tms": false,
+                    "update": {
+                      "interval": 200,
+                      "whenIdle": false,
+                      "whenZooming": true
+                    },
+                    "zIndex": 1,
+                    "zoom": {
+                      "max": 18,
+                      "min": 0,
+                      "native": {
+                        "max": null,
+                        "min": null
+                      },
+                      "offset": 0,
+                      "reverse": false
+                    }
+                  },
+                  "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                  "urlTemplateParams": {}
+                }
+              ]
+            },
+            "ui": {
+              "marker": [
+                {
+                  "icon": {
+                    "color": "#010101",
+                    "path": "material/home\n\n",
+                    "size": {
+                      "height": 36,
+                      "width": 36
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "lat": -36.5435,
+                  "lng": 146.7422,
+                  "name": "DEBARKER",
+                  "opacity": 1,
+                  "popup": {
+                    "autoClose": true,
+                    "closeButton": true,
+                    "closeOnClick": null,
+                    "closeOnEscapeKey": true,
+                    "content": {
+                      "text": "",
+                      "view": {
+                        "path": "Objects/mapview_debarker"
+                      }
+                    },
+                    "enabled": false,
+                    "height": {
+                      "max": null
+                    },
+                    "pan": {
+                      "auto": true
+                    },
+                    "width": {
+                      "max": 1000,
+                      "min": 400
+                    }
+                  },
+                  "tooltip": {
+                    "content": {
+                      "text": "DEBARKER",
+                      "view": {
+                        "params": {},
+                        "path": ""
+                      }
+                    },
+                    "direction": "auto",
+                    "opacity": 1,
+                    "permanent": false,
+                    "sticky": false
+                  }
+                },
+                {
+                  "icon": {
+                    "color": "#010101",
+                    "path": "material/home\n\n",
+                    "size": {
+                      "height": 36,
+                      "width": 36
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "lat": -36.5428,
+                  "lng": 146.7429,
+                  "name": "PH CONTROLLER",
+                  "opacity": 1,
+                  "popup": {
+                    "autoClose": true,
+                    "closeButton": true,
+                    "closeOnClick": null,
+                    "closeOnEscapeKey": true,
+                    "content": {
+                      "text": "",
+                      "view": {
+                        "path": "Navigation/PHCONTROLLER_NAVI"
+                      }
+                    },
+                    "enabled": false,
+                    "height": {
+                      "max": null
+                    },
+                    "pan": {
+                      "auto": true
+                    },
+                    "width": {
+                      "max": 300,
+                      "min": 50
+                    }
+                  },
+                  "tooltip": {
+                    "content": {
+                      "text": "PH CONTROLLER",
+                      "view": {
+                        "params": {},
+                        "path": ""
+                      }
+                    },
+                    "direction": "center",
+                    "opacity": 1,
+                    "permanent": false,
+                    "sticky": false
+                  }
+                },
+                {
+                  "event": {
+                    "stopPropagation": false
+                  },
+                  "icon": {
+                    "color": "#000000",
+                    "path": "material/home\n\n",
+                    "size": {
+                      "height": 36,
+                      "width": 36
+                    },
+                    "style": {
+                      "classes": ""
+                    }
+                  },
+                  "lat": -36.544,
+                  "lng": 146.741,
+                  "name": "Composer 2",
+                  "opacity": 1,
+                  "popup": {
+                    "autoClose": true,
+                    "closeButton": true,
+                    "closeOnClick": null,
+                    "closeOnEscapeKey": true,
+                    "content": {
+                      "text": "",
+                      "view": {
+                        "params": {},
+                        "path": "Objects/mapview_composer2"
+                      }
+                    },
+                    "enabled": false,
+                    "height": {
+                      "max": null
+                    },
+                    "pan": {
+                      "auto": true
+                    },
+                    "width": {
+                      "max": 1000,
+                      "min": 400
+                    }
+                  },
+                  "properties": {},
+                  "tooltip": {
+                    "content": {
+                      "text": "",
+                      "view": {
+                        "params": {},
+                        "path": ""
+                      }
+                    },
+                    "direction": "auto",
+                    "opacity": 1,
+                    "permanent": false,
+                    "sticky": false
+                  }
+                }
+              ],
+              "view": [
+                {
+                  "lat": null,
+                  "lng": 146.7422,
+                  "params": {},
+                  "path": "Primary View/debarker",
+                  "shadow": true,
+                  "transparentBackground": false
+                }
+              ]
+            }
+          }
+        },
+        "type": "ia.display.map"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

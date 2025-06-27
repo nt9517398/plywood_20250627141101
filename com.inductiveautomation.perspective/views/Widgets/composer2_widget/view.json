@@ -1,0 +1,1293 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 315,
+      "width": 675
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "252px"
+            },
+            "props": {
+              "text": "COMPOSER 2\n",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 20,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "669px"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "120px"
+                },
+                "props": {
+                  "text": "STATUS:",
+                  "textStyle": {
+                    "fontSize": 20
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Green pilot light 2"
+                    },
+                    "position": {
+                      "height": 12,
+                      "width": 23,
+                      "x": -1.09,
+                      "y": 26.822336963
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 102,-162 162,-104 180,-34 180,34 162,104 104,162 34,180 -34,180 -104,162 -162,102 -180,34 -180,-34 -162,-102 -102,-162 -34,-180z",
+                          "fill": {
+                            "paint": "#0f0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#6bff6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#a3ffa3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#d9ffd9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Red pilot light 2"
+                    },
+                    "position": {
+                      "height": 12,
+                      "width": 23,
+                      "x": -1.09,
+                      "y": 26.822336963
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M22,497 l34,-178 104,-159 162,-107 175,-34 182,34 159,107 107,159 34,178 -34,179 -107,162 -159,104 -182,34 -175,-34 -162,-104 -104,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#f00"
+                          },
+                          "name": "path",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "406",
+                          "cy": "405",
+                          "fill": {
+                            "paint": "#ff6b6b"
+                          },
+                          "name": "circle",
+                          "r": "291",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M161,357 l15,-74 41,-66 68,-44 74,-13 74,13 66,44 44,66 14,74 -14,74 -44,68 -66,42 -74,14 -74,-14 -68,-42 -41,-68 -15,-74z",
+                          "fill": {
+                            "paint": "#ffa3a3"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M208,311 l7,-39 22,-35 37,-22 37,-7 40,7 36,22 22,35 6,39 -6,40 -22,34 -36,22 -40,8 -37,-8 -37,-22 -22,-34 -7,-40z",
+                          "fill": {
+                            "paint": "#ffd9d9"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Yellow pilot light 2",
+                      "visible": false
+                    },
+                    "position": {
+                      "height": 40,
+                      "width": 60,
+                      "x": 4.236680469,
+                      "y": 9.888396701
+                    },
+                    "props": {
+                      "elements": [
+                        {
+                          "cx": "499",
+                          "cy": "499",
+                          "fill": {
+                            "paint": "#000"
+                          },
+                          "name": "circle",
+                          "r": "499",
+                          "stroke": {
+                            "paint": "#4c4c4c",
+                            "width": "2"
+                          },
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "d": "M21,499 l34,-180 103,-162 162,-102 180,-35 179,35 162,102 102,162 35,180 -35,179 -102,162 -162,103 -179,34 -180,-34 -162,-103 -103,-162 -34,-179z",
+                          "fill": {
+                            "paint": "#fc0"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "d": "M115,404 l20,-108 63,-98 99,-64 108,-21 110,21 98,64 63,98 21,108 -21,110 -63,98 -98,63 -110,21 -108,-21 -99,-63 -63,-98 -20,-110z",
+                          "fill": {
+                            "paint": "#ffe06b"
+                          },
+                          "name": "path",
+                          "style": {},
+                          "type": "path"
+                        },
+                        {
+                          "cx": "359",
+                          "cy": "357",
+                          "fill": {
+                            "paint": "#ffeda3"
+                          },
+                          "name": "circle",
+                          "r": "198",
+                          "style": {},
+                          "type": "circle"
+                        },
+                        {
+                          "cx": "311",
+                          "cy": "311",
+                          "fill": {
+                            "paint": "#fffad9"
+                          },
+                          "name": "circle",
+                          "r": "104",
+                          "style": {},
+                          "type": "circle"
+                        }
+                      ],
+                      "viewBox": "0 0 999 999"
+                    },
+                    "type": "ia.shapes.svg"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "height": 32,
+                      "width": 42.00000000000001,
+                      "x": 36.04,
+                      "y": 19.14
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "classes": "RedFlashing"
+                      },
+                      "text": "STOP"
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "meta": {
+                      "name": "Label_0"
+                    },
+                    "position": {
+                      "height": 32,
+                      "width": 46.00000000000001,
+                      "x": 36.04,
+                      "y": 19.14
+                    },
+                    "propConfig": {
+                      "meta.visible": {
+                        "binding": {
+                          "config": {
+                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                          },
+                          "type": "expr"
+                        }
+                      }
+                    },
+                    "props": {
+                      "style": {
+                        "classes": "GreenFlashing",
+                        "textAlign": "center"
+                      },
+                      "text": "LIVE"
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "CoordinateContainer"
+                },
+                "position": {
+                  "basis": "200px"
+                },
+                "type": "ia.container.coord"
+              }
+            ],
+            "meta": {
+              "name": "status"
+            },
+            "position": {
+              "basis": "300px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "1690px"
+                    },
+                    "props": {
+                      "style": {
+                        "backgroundColor": "#004B3A78"
+                      },
+                      "text": "CURRENT DATA",
+                      "textStyle": {
+                        "fontSize": 20,
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  }
+                ],
+                "meta": {
+                  "name": "FlexContainer_0"
+                },
+                "position": {
+                  "basis": "1685px",
+                  "grow": 2
+                },
+                "props": {
+                  "style": {
+                    "borderStyle": "none",
+                    "borderWidth": 0.1
+                  },
+                  "wrap": "wrap"
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "33px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "meta": {
+                      "name": "Label"
+                    },
+                    "position": {
+                      "basis": "32px"
+                    },
+                    "props": {
+                      "text": " PRODUCTION STATS\n",
+                      "textStyle": {
+                        "backgroundColor": "#004B3A",
+                        "fontFamily": "inherit",
+                        "textAlign": "center"
+                      }
+                    },
+                    "type": "ia.display.label"
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "107px"
+                                },
+                                "props": {
+                                  "text": "Line status",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "meta": {
+                                      "name": "Label_1"
+                                    },
+                                    "position": {
+                                      "basis": "15px"
+                                    },
+                                    "propConfig": {
+                                      "meta.visible": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "{[default]site_composer2/current/LineDownForMinutes} !\u003d 0"
+                                          },
+                                          "type": "expr"
+                                        }
+                                      },
+                                      "props.style.color": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "fallback": null,
+                                              "inputType": "range",
+                                              "mappings": [
+                                                {
+                                                  "input": {
+                                                    "exclusiveMin": true,
+                                                    "max": 0
+                                                  },
+                                                  "output": 0
+                                                },
+                                                {
+                                                  "input": {
+                                                    "exclusiveMax": true,
+                                                    "min": 1
+                                                  },
+                                                  "output": 1
+                                                }
+                                              ],
+                                              "outputType": "scalar",
+                                              "type": "map"
+                                            },
+                                            {
+                                              "fallback": "#000000",
+                                              "inputType": "scalar",
+                                              "mappings": [
+                                                {
+                                                  "input": 1,
+                                                  "output": "#D90000"
+                                                },
+                                                {
+                                                  "input": 0,
+                                                  "output": "#00D900"
+                                                }
+                                              ],
+                                              "outputType": "color",
+                                              "type": "map"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      },
+                                      "props.text": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "expression": "\u0027Down for \u0027 +{value} + \u0027 min\u0027",
+                                              "type": "expression"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "textStyle": {
+                                        "fontSize": 16,
+                                        "textAlign": "center"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  },
+                                  {
+                                    "meta": {
+                                      "name": "Label_2"
+                                    },
+                                    "position": {
+                                      "basis": "15px"
+                                    },
+                                    "propConfig": {
+                                      "meta.visible": {
+                                        "binding": {
+                                          "config": {
+                                            "expression": "{[default]site_composer2/current/LineDownForMinutes} \u003d 0"
+                                          },
+                                          "type": "expr"
+                                        }
+                                      },
+                                      "props.style.color": {
+                                        "binding": {
+                                          "config": {
+                                            "fallbackDelay": 2.5,
+                                            "mode": "direct",
+                                            "tagPath": "[default]site_composer2/current/LineDownForMinutes"
+                                          },
+                                          "transforms": [
+                                            {
+                                              "fallback": null,
+                                              "inputType": "range",
+                                              "mappings": [
+                                                {
+                                                  "input": {
+                                                    "exclusiveMin": true,
+                                                    "max": 0
+                                                  },
+                                                  "output": 0
+                                                },
+                                                {
+                                                  "input": {
+                                                    "exclusiveMax": true,
+                                                    "min": 1
+                                                  },
+                                                  "output": 1
+                                                }
+                                              ],
+                                              "outputType": "scalar",
+                                              "type": "map"
+                                            },
+                                            {
+                                              "fallback": "#000000",
+                                              "inputType": "scalar",
+                                              "mappings": [
+                                                {
+                                                  "input": 1,
+                                                  "output": "#D90000"
+                                                },
+                                                {
+                                                  "input": 0,
+                                                  "output": "#00D900"
+                                                }
+                                              ],
+                                              "outputType": "color",
+                                              "type": "map"
+                                            }
+                                          ],
+                                          "type": "tag"
+                                        }
+                                      }
+                                    },
+                                    "props": {
+                                      "text": "Running",
+                                      "textStyle": {
+                                        "fontSize": 16,
+                                        "textAlign": "center"
+                                      }
+                                    },
+                                    "type": "ia.display.label"
+                                  }
+                                ],
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "207px"
+                                },
+                                "props": {
+                                  "direction": "column",
+                                  "justify": "center"
+                                },
+                                "type": "ia.container.flex"
+                              }
+                            ],
+                            "meta": {
+                              "name": "line_status"
+                            },
+                            "position": {
+                              "basis": "39px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "167px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 15
+                                  },
+                                  "text": "Lineal Meters\n Produced",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "13px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "71px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/LinealMeterGoodVeneer"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "#.##",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "total_blocks"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "89px"
+                                },
+                                "props": {
+                                  "text": "Run rate",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "90px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "139px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/LinealMetersPerHour"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" m/h\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "run_rate"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "146.1px"
+                                },
+                                "props": {
+                                  "text": "OEE (Live)",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "34px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "92px"
+                                },
+                                "propConfig": {
+                                  "props.style.classes": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/TodayComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "fallback": "RedTextFlashing",
+                                          "inputType": "range",
+                                          "mappings": [
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 60,
+                                                "min": 50
+                                              },
+                                              "output": "RedTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 70,
+                                                "min": 60
+                                              },
+                                              "output": "YelloTextFlashing"
+                                            },
+                                            {
+                                              "input": {
+                                                "exclusiveMax": true,
+                                                "max": 300,
+                                                "min": 70
+                                              },
+                                              "output": "GreenTextFlashing"
+                                            }
+                                          ],
+                                          "outputType": "style-list",
+                                          "type": "map"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  },
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/TodayComposerOEE"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "props": {
+                                  "style": {
+                                    "color": ""
+                                  },
+                                  "textStyle": {
+                                    "textAlign": ""
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "CURRENT_OEE"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "left"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-evenly"
+                        },
+                        "type": "ia.container.flex"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "132px"
+                                },
+                                "props": {
+                                  "text": "Downtime events",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "42px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/DowntimeEvents"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value}",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime_events"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "190px"
+                                },
+                                "props": {
+                                  "text": "Current Shift Downtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "13px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "74px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/CurrentShiftDowntime"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "expression": "{value} + \" min\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "downtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "68px"
+                                },
+                                "props": {
+                                  "text": "Runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "138px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "95px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/RuntimePercentage"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.#",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          },
+                          {
+                            "children": [
+                              {
+                                "meta": {
+                                  "name": "Label"
+                                },
+                                "position": {
+                                  "basis": "169px"
+                                },
+                                "props": {
+                                  "style": {
+                                    "fontSize": 17
+                                  },
+                                  "text": "Effective runtime",
+                                  "textStyle": {
+                                    "textAlign": "start"
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              },
+                              {
+                                "meta": {
+                                  "name": "FlexContainer"
+                                },
+                                "position": {
+                                  "basis": "37px"
+                                },
+                                "type": "ia.container.flex"
+                              },
+                              {
+                                "meta": {
+                                  "name": "Label_0"
+                                },
+                                "position": {
+                                  "basis": "113px"
+                                },
+                                "propConfig": {
+                                  "props.text": {
+                                    "binding": {
+                                      "config": {
+                                        "fallbackDelay": 2.5,
+                                        "mode": "direct",
+                                        "tagPath": "[default]site_composer2/current/EffectiveRuntimePercentage"
+                                      },
+                                      "transforms": [
+                                        {
+                                          "formatType": "numeric",
+                                          "formatValue": "##.## ",
+                                          "type": "format"
+                                        },
+                                        {
+                                          "expression": "{value} + \" %\"",
+                                          "type": "expression"
+                                        }
+                                      ],
+                                      "type": "tag"
+                                    }
+                                  }
+                                },
+                                "type": "ia.display.label"
+                              }
+                            ],
+                            "meta": {
+                              "name": "effective_runtime"
+                            },
+                            "position": {
+                              "basis": "28px"
+                            },
+                            "type": "ia.container.flex"
+                          }
+                        ],
+                        "meta": {
+                          "name": "right"
+                        },
+                        "position": {
+                          "basis": "325px"
+                        },
+                        "props": {
+                          "direction": "column",
+                          "justify": "space-around"
+                        },
+                        "type": "ia.container.flex"
+                      }
+                    ],
+                    "meta": {
+                      "name": "FlexContainer"
+                    },
+                    "position": {
+                      "basis": "160px"
+                    },
+                    "props": {
+                      "justify": "space-evenly"
+                    },
+                    "type": "ia.container.flex"
+                  }
+                ],
+                "meta": {
+                  "name": "Left"
+                },
+                "position": {
+                  "basis": "665px"
+                },
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "borderStyle": "outset",
+                    "borderWidth": 0.5
+                  }
+                },
+                "type": "ia.container.flex"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "237px",
+              "grow": 1
+            },
+            "props": {
+              "justify": "space-around"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_shift"
+        },
+        "position": {
+          "basis": "270px",
+          "grow": 1
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-around",
+          "style": {
+            "backgroundColor": "#000000",
+            "borderStyle": "outset",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
