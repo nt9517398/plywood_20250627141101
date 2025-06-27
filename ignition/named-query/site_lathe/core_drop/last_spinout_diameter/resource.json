@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "site_lathe",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "d5481ed1958ccda7aed9c486f5f6ebe7e43298b879e4fd70618ec19a1c931897",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2023-06-05T01:33:37Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "date_from",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "date_to",
+        "sqlType": 8
+      }
+    ]
+  }
+}
