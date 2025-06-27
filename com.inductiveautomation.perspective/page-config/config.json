@@ -1,0 +1,176 @@
+{
+  "pages": {
+    "/black_liquor_dump": {
+      "title": "",
+      "viewPath": "Primary View/black_liquor_dump"
+    },
+    "/boiler_common": {
+      "title": "",
+      "viewPath": "Primary View/boiler_common"
+    },
+    "/composer2": {
+      "title": "",
+      "viewPath": "Primary View/composer2"
+    },
+    "/composer2_downtimereport": {
+      "title": "",
+      "viewPath": "Reports/composer2_downtimereport"
+    },
+    "/composer2_productionreport": {
+      "title": "",
+      "viewPath": "Reports/composer2_productionreport"
+    },
+    "/concentrator_BL_dump_history_report": {
+      "title": "",
+      "viewPath": "Reports/concentrator_BL_dump_history_report"
+    },
+    "/debarker": {
+      "title": "",
+      "viewPath": "Primary View/debarker"
+    },
+    "/debarker_downtimereport": {
+      "title": "",
+      "viewPath": "Reports/debarker_downtimereport"
+    },
+    "/debarker_productionreport": {
+      "title": "",
+      "viewPath": "Reports/debarker_productionreport"
+    },
+    "/falldown_sander": {
+      "title": "",
+      "viewPath": "Reports/falldown_sander"
+    },
+    "/formply_press": {
+      "title": "",
+      "viewPath": "Primary View/formply_press"
+    },
+    "/formply_press_downtimereport": {
+      "title": "",
+      "viewPath": "Reports/formply_press_downtimereport"
+    },
+    "/formply_press_productionreport": {
+      "title": "",
+      "viewPath": "Reports/formply_press_productionreport"
+    },
+    "/formply_trimline": {
+      "title": "",
+      "viewPath": "Primary View/formply_trimline"
+    },
+    "/formply_trimline_downtimereport": {
+      "title": "",
+      "viewPath": "Reports/formply_trimline_downtimereport"
+    },
+    "/formply_trimline_productionreport": {
+      "title": "",
+      "viewPath": "Reports/formply_trimline_productionreport"
+    },
+    "/lul": {
+      "title": "",
+      "viewPath": "Primary View/layupline"
+    },
+    "/lul_glue_pressure": {
+      "title": "",
+      "viewPath": "Primary View/lul_glue_pressure"
+    },
+    "/mapview": {
+      "title": "",
+      "viewPath": "Primary View/mapview"
+    },
+    "/mapview_composer2": {
+      "title": "",
+      "viewPath": "Objects/mapview_composer2"
+    },
+    "/mapview_debarker": {
+      "viewPath": "Objects/mapview_debarker"
+    },
+    "/milloverview": {
+      "title": "",
+      "viewPath": "Primary View/milloverview"
+    },
+    "/new-page": {
+      "title": "",
+      "viewPath": ""
+    },
+    "/ply2_press": {
+      "title": "",
+      "viewPath": "Primary View/site_press"
+    },
+    "/press_pressure_charts": {
+      "title": "",
+      "viewPath": "Primary View/site_press_pressure_chart"
+    },
+    "/site_dryer": {
+      "title": "",
+      "viewPath": "Primary View/site_dryer"
+    },
+    "/site_falldown_sander": {
+      "title": "",
+      "viewPath": "Primary View/site_falldown_sander"
+    },
+    "/site_lathe": {
+      "title": "",
+      "viewPath": "Primary View/site_lathe"
+    },
+    "/site_sander": {
+      "title": "",
+      "viewPath": "Primary View/site_sander"
+    },
+    "/tradewasteph": {
+      "docks": {
+        "top": [
+          {
+            "anchor": "fixed",
+            "autoBreakpoint": 480,
+            "content": "push",
+            "handle": "hide",
+            "iconUrl": "",
+            "id": "",
+            "modal": false,
+            "resizable": false,
+            "show": "visible",
+            "size": 75,
+            "viewParams": {},
+            "viewPath": "Navigation/TopView"
+          }
+        ]
+      },
+      "title": "",
+      "viewPath": "Primary View/Trade Waste PH"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "left": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "auto",
+        "handle": "show",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 275,
+        "viewParams": {},
+        "viewPath": "Navigation/SIDE VIEW"
+      }
+    ],
+    "top": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 480,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "",
+        "modal": false,
+        "resizable": false,
+        "show": "visible",
+        "size": 50,
+        "viewParams": {},
+        "viewPath": "Navigation/TOP VIEW"
+      }
+    ]
+  }
+}
