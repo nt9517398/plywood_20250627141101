@@ -1,0 +1,913 @@
+{
+  "name": "site_sander",
+  "tagType": "Folder",
+  "tags": [
+    {
+      "name": "sander_ax350i",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "7000",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[Sander_ax350i]7000/Last Receive Time",
+              "dataType": "DateTime",
+              "name": "Last Receive Time",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[Sander_ax350i]7000/MessageBytes",
+              "dataType": "Int2Array",
+              "name": "MessageBytes",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[Sander_ax350i]7000/Message",
+              "dataType": "String",
+              "name": "Message",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            }
+          ]
+        },
+        {
+          "name": "_Diagnostics_",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[Sander_ax350i][Diagnostics]/Is Connected",
+              "dataType": "Boolean",
+              "name": "Is Connected",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inkjet_signal",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "expr",
+          "expression": "if({[.]I_PC_Stkr1_TippleUpContorl}!\u003d0,if(IsGood({[.]PC_stkr1_trigger}),{[.]PC_stkr1_trigger},0)+1,if(IsGood({[.]PC_stkr1_trigger}),{[.]PC_stkr1_trigger},0))",
+          "name": "PC_stkr1_trigger",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "name": "OutPanel_Info_RollConv2",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[2]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_2_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[5]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_5_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[4]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_4_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[0]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_0_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[1]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_1_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[6]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_6_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[7]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_7_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[3]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_3_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[8]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_8_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.OutPanel_Info_RollConv2.OutPanel_Info_RollConv2[9]",
+              "dataType": "Int4",
+              "name": "OutPanel_Info_RollConv2_9_",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            }
+          ]
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.GradingPulse",
+          "dataType": "Boolean",
+          "name": "GradingPulse",
+          "tagGroup": "inkjet_signal_50ms",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.I_PC_Stkr1_TippleUpContorl",
+          "dataType": "Boolean",
+          "name": "I_PC_Stkr1_TippleUpContorl",
+          "tagGroup": "inkjet_signal_50ms",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        }
+      ]
+    },
+    {
+      "name": "bin_counter",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.MIS_Stackings.CounterBin1",
+          "dataType": "Int4",
+          "name": "CounterBin1",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.HMI_RecipeActual.Stacker_2_Psc",
+          "dataType": "Int4",
+          "name": "Stacker_2_Psc",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.HMI_RecipeActual.Stacker_4_Psc",
+          "dataType": "Int4",
+          "name": "Stacker_4_Psc",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.MIS_Stackings.CounterBin4",
+          "dataType": "Int4",
+          "name": "CounterBin4",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.MIS_Stackings.CounterBin2",
+          "dataType": "Int4",
+          "name": "CounterBin2",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.HMI_RecipeActual.Stacker_3_Psc",
+          "dataType": "Int4",
+          "name": "Stacker_3_Psc",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.MIS_Stackings.CounterBin3",
+          "dataType": "Int4",
+          "name": "CounterBin3",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        },
+        {
+          "valueSource": "opc",
+          "opcItemPath": "ns\u003d1;s\u003d[site_sander]Global.HMI_RecipeActual.Stacker_1_Psc",
+          "dataType": "Int4",
+          "name": "Stacker_1_Psc",
+          "tagType": "AtomicTag",
+          "opcServer": "Ignition OPC UA Server"
+        }
+      ]
+    },
+    {
+      "name": "falldown",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "barcode",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "barcode",
+              "value": "",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "short covers L",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "NS_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "outofsq",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "putty work",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "sand through",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "waste on",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "NS_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "harvester mark",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Lathe Defect",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "NS_face",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "narrow covers",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "NS_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "face veneer split",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "short covers W",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "NS_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "Glue On Face",
+          "tagType": "Folder"
+        },
+        {
+          "name": "case",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product} \u003d\u0027Formrite\u0027,1,0)\r\n",
+              "name": "case5",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product}\u003d\u0027EcoPly\u0027,if({[.]../product/grade}!\u003d\u0027DD\u0027,if({[.]../product/grade} \u003d\u0027CC\u0027,0,1),0),0)",
+              "name": "case1",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product}\u003d\u0027EcoPly\u0027,if({[.]../product/grade}\u003d\u0027G2S\u0027,1,0),0)\r\n",
+              "name": "case7",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product} \u003d\u0027PlyFloor\u0027,1,0)\r\n",
+              "name": "case3",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product} \u003d\u0027CCFO\u0027,1,0)\r\n",
+              "name": "case4",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/product}\u003d\u0027EcoPly\u0027,if({[.]../product/grade}\u003d\u0027NS\u0027,1,0),0)\r\n",
+              "name": "case6",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "expr",
+              "expression": "if({[.]../product/grade} \u003d\u0027CD\u0027,1,0)\r\n",
+              "name": "case2",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "chain marks",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "too thin",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "product",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "length",
+              "value": 2400,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "shift",
+              "value": "MORNING",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "construction",
+              "value": 7,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "product",
+              "value": "PlyFloor",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "grader",
+              "value": "HC",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "run_number",
+              "value": 2106,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "thickness",
+              "value": 17,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "grade",
+              "value": "CD",
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "width",
+              "value": 1200,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Float8",
+              "name": "face",
+              "value": 2.4,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "String",
+              "name": "rating",
+              "value": "F11",
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "broken covers",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "NS_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_back",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "lul faults",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "waste indents",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "other",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "delamination",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "fork line damage",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "groove not centre",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        },
+        {
+          "name": "short covers",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "memory",
+              "name": "G1S_P_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "name": "reject",
+              "value": 0,
+              "tagType": "AtomicTag"
+            },
+            {
+              "valueSource": "memory",
+              "dataType": "Int4",
+              "name": "NS_face",
+              "value": 0,
+              "tagType": "AtomicTag"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
